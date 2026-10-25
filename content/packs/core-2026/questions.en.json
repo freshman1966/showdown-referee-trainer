@@ -1,0 +1,2760 @@
+[
+  {
+    "id": "T-001",
+    "level": "trainee",
+    "topics": [
+      "match-format"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "In individual play, when is a set won?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "The first player to reach 11 points"
+      },
+      {
+        "id": "b",
+        "text": "The first player to reach at least 11 points with a lead of 2 points"
+      },
+      {
+        "id": "c",
+        "text": "The first player to reach at least 21 points with a lead of 2 points"
+      },
+      {
+        "id": "d",
+        "text": "The first player to reach at least 15 points with a lead of 2 points"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "An individual set is won by the player who first reaches at least 11 points with a margin of 2 points. Team play uses 31 points with a 2-point margin.",
+    "ruleRefs": [
+      "6",
+      "8.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-002",
+    "level": "trainee",
+    "topics": [
+      "match-format",
+      "signals"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "How many points does a player receive for a goal?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point"
+      },
+      {
+        "id": "b",
+        "text": "2 points"
+      },
+      {
+        "id": "c",
+        "text": "3 points"
+      },
+      {
+        "id": "d",
+        "text": "1 point and the next serve"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": true,
+    "explanation": "When the ball fully enters the goal pocket, the referee blows a double whistle, calls \"Goal\" and awards 2 points to the scoring player.",
+    "ruleRefs": [
+      "16.2.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-003",
+    "level": "trainee",
+    "topics": [
+      "match-format"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Which of these is NOT a permitted number of sets for an individual match?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "1 set"
+      },
+      {
+        "id": "b",
+        "text": "Best of 3 sets"
+      },
+      {
+        "id": "c",
+        "text": "Best of 4 sets"
+      },
+      {
+        "id": "d",
+        "text": "Best of 5 sets"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "fixedOrder": true,
+    "explanation": "A match is played over an odd number of sets: 1, best of 3, or best of 5. The winner is the player who wins the majority of sets.",
+    "ruleRefs": [
+      "6",
+      "8.1",
+      "8.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-004",
+    "level": "trainee",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "In individual play, how many consecutive serves does a player have before the serve passes to the opponent?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "2"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": true,
+    "explanation": "A serve turn in individual play is 2 serves. In team play each player serves 3 times.",
+    "ruleRefs": [
+      "6",
+      "14.2",
+      "23.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-005",
+    "level": "trainee",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "After the referee's whistle, how much time does the server have to serve?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "2 seconds"
+      },
+      {
+        "id": "b",
+        "text": "3 seconds"
+      },
+      {
+        "id": "c",
+        "text": "5 seconds"
+      },
+      {
+        "id": "d",
+        "text": "No limit, as long as the player does not delay play"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": true,
+    "explanation": "The ball must be served within 2 seconds of the whistle. Serving later is an irregular serve and gives 1 point to the opponent. The server may reposition the ball after the whistle, but the 2 seconds still apply.",
+    "ruleRefs": [
+      "6",
+      "16.3.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-006",
+    "level": "trainee",
+    "topics": [
+      "serve",
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves. The ball bounces once off the sidewall and then passes over the centre screen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Re-serve"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B"
+      },
+      {
+        "id": "c",
+        "text": "2 points to Player B"
+      },
+      {
+        "id": "d",
+        "text": "No decision, play continues"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "A ball that passes over the centre screen is a centre-screen fault. The opponent receives 1 point. This also applies on a serve.",
+    "ruleRefs": [
+      "16.4.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-007",
+    "level": "trainee",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves. The ball slides along the sidewall and then passes under the centre screen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Legal serve, play continues"
+      },
+      {
+        "id": "b",
+        "text": "Re-serve"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player B"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player A"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "fixedOrder": false,
+    "explanation": "A served ball must bounce off the sidewall exactly once before it passes under the centre screen. A ball sliding along the wall counts as more than one bounce. This is an irregular serve: 1 point to the opponent.",
+    "ruleRefs": [
+      "6",
+      "16.3.7"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-008",
+    "level": "trainee",
+    "topics": [
+      "serve",
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves. The ball bounces once off the sidewall, touches the bottom edge of the centre screen and passes straight through to Player B's half.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Legal serve, play continues"
+      },
+      {
+        "id": "b",
+        "text": "Re-serve"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player B for a centre-screen fault"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player B for an irregular serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "After exactly one sidewall bounce, a ball that touches the bottom of the centre screen and passes directly to the other side is not a fault. It is a centre-screen fault only if the ball goes over the screen or loses its forward motion after hitting it.",
+    "ruleRefs": [
+      "16.3.7",
+      "16.4.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-009",
+    "level": "trainee",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player B drops the bat. The bat is not broken.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Re-serve"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A"
+      },
+      {
+        "id": "c",
+        "text": "2 points to Player A"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player B"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "Dropping the bat is a bat infraction: 1 point to the opponent. Only a broken bat leads to a stop and a re-serve.",
+    "ruleRefs": [
+      "16.9.2",
+      "16.9.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-010",
+    "level": "trainee",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, the ball touches Player B's hand protection on the batting hand, about 3 cm above the wrist joint.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player A for body touch"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for invasion"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "The batting hand is the hand up to and including 60 mm past the wrist joint, including the hand protection. Contact between the ball and the batting hand is allowed (outside the goal area). A body touch is contact with any other part of the body.",
+    "ruleRefs": [
+      "6",
+      "16.5.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-011",
+    "level": "trainee",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player B stops the ball with the bat and holds it still. The ball is silent for about 3 seconds before Player B plays it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dead ball, re-serve"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A"
+      },
+      {
+        "id": "c",
+        "text": "2 points to Player A"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player B"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "Trapping or stopping the ball so that it is inaudible for more than 2 seconds is a ball infraction: 1 point to the opponent. The referee judges the time; no stopwatch is used.",
+    "ruleRefs": [
+      "16.10.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-012",
+    "level": "trainee",
+    "topics": [
+      "dead-ball"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "After a weak shot, the ball rolls very slowly and comes to rest near the middle of the table, out of reach of both players. No player has trapped it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dead ball, re-serve"
+      },
+      {
+        "id": "b",
+        "text": "1 point to the player who did not play the last shot"
+      },
+      {
+        "id": "c",
+        "text": "Out, 1 point to the opponent of the last player to hit the ball"
+      },
+      {
+        "id": "d",
+        "text": "The player who last hit the ball serves again"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "When the ball moves so slowly that it will not reach a point where a player can continue, or it is inaudible for more than 2 seconds without being trapped, the referee blows one whistle, calls \"Dead ball\" and orders a re-serve.",
+    "ruleRefs": [
+      "17.1",
+      "17.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-013",
+    "level": "trainee",
+    "topics": [
+      "goal-area",
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player B touches the ball with the bat inside B's own goal area. The ball rolls back towards the centre of the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for illegal defence"
+      },
+      {
+        "id": "c",
+        "text": "2 points to Player A"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "The bat and batting hand must not touch the ball in the goal area. If they do and the ball then stops or goes anywhere other than directly into the goal, it is illegal defence: 1 point to the opponent. If it goes directly into the goal, it is a goal (2 points).",
+    "ruleRefs": [
+      "16.6.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-014",
+    "level": "trainee",
+    "topics": [
+      "time-outs"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "In individual play, how many time-outs does each player have, and how long is one?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "One per match, 60 seconds"
+      },
+      {
+        "id": "b",
+        "text": "One per set, 60 seconds"
+      },
+      {
+        "id": "c",
+        "text": "Two per set, 30 seconds each"
+      },
+      {
+        "id": "d",
+        "text": "One per set, 90 seconds"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "Each player has one time-out of 60 seconds per set. In team play each team has one 60-second time-out per match.",
+    "ruleRefs": [
+      "18.2.1",
+      "23.14"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-015",
+    "level": "trainee",
+    "topics": [
+      "time-outs",
+      "procedures"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "multiple",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Which statements about a regular time-out are correct? Select all that apply.",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "The player may request it."
+      },
+      {
+        "id": "b",
+        "text": "The coach may request it."
+      },
+      {
+        "id": "c",
+        "text": "It may be requested while the ball is in play."
+      },
+      {
+        "id": "d",
+        "text": "The referee gives a \"15 seconds\" warning before it ends."
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "fixedOrder": true,
+    "explanation": "A time-out may be requested by the player or the coach, only during a break in play. A \"15 seconds\" warning is given before the time-out ends.",
+    "ruleRefs": [
+      "18.2.2",
+      "18.2.3",
+      "18.2.4"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-016",
+    "level": "trainee",
+    "topics": [
+      "warnings-penalties",
+      "equipment"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A has no previous warning. During play, Player A touches the mask without the referee's permission.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warning to Player A"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B"
+      },
+      {
+        "id": "c",
+        "text": "2-point penalty: 2 points to Player B"
+      },
+      {
+        "id": "d",
+        "text": "Player A loses the match by default"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "fixedOrder": false,
+    "explanation": "A player may touch the mask only between sets, during time-outs and during change of sides. At any other time, touching it without the referee's permission is penalised immediately with 2 points to the opponent. There is no warning first.",
+    "ruleRefs": [
+      "11.3",
+      "20.4.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-017",
+    "level": "trainee",
+    "topics": [
+      "warnings-penalties"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player B has no previous warning. During a rally, Player B shoves the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warning to Player B"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A"
+      },
+      {
+        "id": "c",
+        "text": "2-point penalty: 2 points to Player A"
+      },
+      {
+        "id": "d",
+        "text": "No decision"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Shoving the table, or moving it excessively or constantly in a disturbing way, is one of the infractions listed in 20.3. The first such infraction in a match is a warning. Play stopped to give the warning resumes with a re-serve.",
+    "ruleRefs": [
+      "20.1",
+      "20.3.4"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-018",
+    "level": "trainee",
+    "topics": [
+      "warnings-penalties"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "In set 1, Player B received a warning for talking during play. In set 2, Player B scrapes the bat on the table in a disturbing way.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warning to Player B, because it is a different infraction"
+      },
+      {
+        "id": "b",
+        "text": "Warning to Player B, because warnings reset after each set"
+      },
+      {
+        "id": "c",
+        "text": "2-point penalty: 2 points to Player A"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player A"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "fixedOrder": false,
+    "explanation": "Warnings are valid for the whole match. Any second infraction from the 20.3 list is penalised with 2 points to the opponent, even if it is a different type of infraction from the first.",
+    "ruleRefs": [
+      "20.2",
+      "20.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-019",
+    "level": "trainee",
+    "topics": [
+      "change-sides",
+      "procedures"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "In the last set of a best-of-3 individual match, when do the players change sides?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "They do not change sides in the last set"
+      },
+      {
+        "id": "b",
+        "text": "When one player reaches 6 points"
+      },
+      {
+        "id": "c",
+        "text": "When the total score reaches 11 points"
+      },
+      {
+        "id": "d",
+        "text": "When one player reaches 5 points"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": false,
+    "explanation": "Players change sides after each set. In a single-set match and in the last set of a match they also change when one player reaches 6 points (or after half of the stop-time, in a time-limited match). Change of sides lasts 60 seconds with a \"15 seconds\" warning.",
+    "ruleRefs": [
+      "19.1",
+      "19.2",
+      "19.4",
+      "19.5"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "T-020",
+    "level": "trainee",
+    "topics": [
+      "signals"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Which whistle signal does the referee use for a goal?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "One short whistle"
+      },
+      {
+        "id": "b",
+        "text": "Two short whistles (double whistle)"
+      },
+      {
+        "id": "c",
+        "text": "One long whistle"
+      },
+      {
+        "id": "d",
+        "text": "Three short whistles"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "fixedOrder": true,
+    "explanation": "One whistle starts or stops play, a double whistle signals a goal, and a long whistle ends a set or the match.",
+    "ruleRefs": [
+      "15.1",
+      "16.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-001",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player B holds the non-batting hand above the table, higher than the tops of the sidewalls. The hand does not touch the ball or the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for invasion"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for body touch"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player B for holding the table"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Invasion is holding the non-batting hand in the inner playing area. The inner playing area ends at an imaginary horizontal line at the height of the sidewall tops. A hand held above that line, even above the table, is not an invasion.",
+    "ruleRefs": [
+      "1",
+      "16.8.1",
+      "Appendix 6"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-002",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 1,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player B rests the non-batting hand on the playing deck in B's own half. B is not switching the bat to the other hand. The ball does not touch the hand.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player A for invasion"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for body touch"
+      },
+      {
+        "id": "c",
+        "text": "Warning to Player B"
+      },
+      {
+        "id": "d",
+        "text": "No decision, play continues"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The non-batting hand is inside the inner playing area (below the imaginary line at the height of the sidewall tops) and the player is not switching hands. This is an invasion: 1 point to the opponent. Ball contact is not required.",
+    "ruleRefs": [
+      "16.8.1",
+      "Appendix 6"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-003",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player B switches the bat from the right hand to the left hand. For a moment both hands hold the bat inside the inner playing area.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for invasion"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for bat infraction"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Switching the bat to the other hand is an explicit exception in both rules: the non-batting hand may enter the inner playing area while switching hands (16.8.1), and the bat may be held with both hands while switching (16.9.1).",
+    "ruleRefs": [
+      "16.8.1",
+      "16.9.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-004",
+    "level": "national",
+    "topics": [
+      "warnings-penalties"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A has no previous warning. During a rally, Player A holds the outside of the curve at A's end of the table with the non-batting hand.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "Warning to Player A for holding the table"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player B for invasion"
+      },
+      {
+        "id": "d",
+        "text": "2-point penalty: 2 points to Player B"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Holding the table with the non-batting hand is not allowed, except at the end of the table. The end of the table includes the whole curve. Holding the curve is therefore allowed.",
+    "ruleRefs": [
+      "1",
+      "20.3.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-005",
+    "level": "national",
+    "topics": [
+      "warnings-penalties",
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A has no previous warning. During a rally, Player A holds the outside of the sidewall, about 30 cm from the curve, with the non-batting hand. The hand stays outside the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warning to Player A for holding the table"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B for invasion"
+      },
+      {
+        "id": "c",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "d",
+        "text": "2-point penalty: 2 points to Player B"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Holding any part of the table with the non-batting hand, other than the end of the table, is an infraction under 20.3.2. The hand is outside the inner playing area, so it is not an invasion. First infraction: warning.",
+    "ruleRefs": [
+      "20.3.2",
+      "20.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-006",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player A grips the contact board on A's end wall with the non-batting hand.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player B for invasion"
+      },
+      {
+        "id": "b",
+        "text": "Warning to Player A for holding the table"
+      },
+      {
+        "id": "c",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player B for out"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Gripping the contact board with the non-batting hand is listed as an invasion (16.8.2): 1 point to the opponent. This applies even though holding the end of the table is otherwise allowed.",
+    "ruleRefs": [
+      "16.8.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-007",
+    "level": "national",
+    "topics": [
+      "warnings-penalties"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "multiple",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Which infractions lead to an immediate 2-point penalty, without a warning first? Select all that apply.",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "Touching the mask during a rally without the referee's permission"
+      },
+      {
+        "id": "b",
+        "text": "The coach's mobile phone rings during the match"
+      },
+      {
+        "id": "c",
+        "text": "The coach tries to give the player secret signs"
+      },
+      {
+        "id": "d",
+        "text": "The player talks during play"
+      },
+      {
+        "id": "e",
+        "text": "The player hooks the ball with a finger"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "fixedOrder": true,
+    "explanation": "Rule 20.4 lists three infractions penalised immediately with 2 points: touching the mask at a non-permitted time without permission, noise from a phone or other device of the player or coach, and secret signs from the coach. Talking and hooking the ball are in the 20.3 list: warning first, penalty from the second infraction.",
+    "ruleRefs": [
+      "20.3.3",
+      "20.3.6",
+      "20.4.1",
+      "20.4.2",
+      "20.4.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-008",
+    "level": "national",
+    "topics": [
+      "warnings-penalties",
+      "equipment"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A calls a time-out. During the time-out, Player A adjusts the mask without asking the referee.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No sanction"
+      },
+      {
+        "id": "b",
+        "text": "Warning to Player A"
+      },
+      {
+        "id": "c",
+        "text": "2-point penalty: 2 points to Player B"
+      },
+      {
+        "id": "d",
+        "text": "Warning, and the time-out ends immediately"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "A player may touch the mask between sets, during time-outs and during change of sides without asking. Permission is only needed at other times. Before play resumes, the referee checks that the mask is worn correctly.",
+    "ruleRefs": [
+      "11.3",
+      "11.4",
+      "20.4.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-009",
+    "level": "national",
+    "topics": [
+      "warnings-penalties",
+      "procedures"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, the mobile phone of Player B's coach rings. The referee stops play.",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 points to Player A; play resumes with a re-serve"
+      },
+      {
+        "id": "b",
+        "text": "Warning to Player B; play resumes with a re-serve"
+      },
+      {
+        "id": "c",
+        "text": "2 points to Player A; the rally is played to the end first"
+      },
+      {
+        "id": "d",
+        "text": "The coach is sent out; no points awarded"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Noise from a mobile phone or other device of the player or their coach is penalised immediately with 2 points to the opponent. When the referee stops play to give a penalty, play resumes with a re-serve.",
+    "ruleRefs": [
+      "20.1",
+      "20.4.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-010",
+    "level": "national",
+    "topics": [
+      "warnings-penalties"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A has no previous warning. During a rally, Player A steps beside the table and plays the ball while standing next to the sidewall, in front of the point where the curve meets the sidewall.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warning to Player A for playing outside the position area"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player B"
+      },
+      {
+        "id": "d",
+        "text": "2-point penalty: 2 points to Player B"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The player position area is behind the table. Its front boundary is the imaginary line through the two points where the curves meet the sidewalls, extended sideways. Playing in front of that line, beside the sidewall, is playing outside the position area. First infraction: warning.",
+    "ruleRefs": [
+      "5.1",
+      "20.3.1",
+      "Appendix 5"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-011",
+    "level": "national",
+    "topics": [
+      "warnings-penalties"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player A plays the ball while standing behind the table, half a step further to the side than the outside edge of the sidewall, and behind the point where the curve meets the sidewall.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "Warning to Player A for playing outside the position area"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player B"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player A for delaying the game"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The player position area has no limit at the back or at the sides. Standing to the side, wider than the table, is allowed as long as the player stays behind the line through the points where the curves meet the sidewalls.",
+    "ruleRefs": [
+      "5.1",
+      "Appendix 5"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-012",
+    "level": "national",
+    "topics": [
+      "procedures"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Where may a coach stand during play?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "On the side of the table opposite the first referee, alongside their player's half, up to 2 m from the sidewall"
+      },
+      {
+        "id": "b",
+        "text": "On the same side as the first referee, next to the centre screen"
+      },
+      {
+        "id": "c",
+        "text": "Behind their player, inside the player position area"
+      },
+      {
+        "id": "d",
+        "text": "Anywhere in the room, as long as the coach is silent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The coaches' standing area is on the side of the table opposite the first referee. It runs along the table from the point where the curve meets the sidewall to the centre screen, up to 2 m from the sidewall. The coach must stay on their player's side of the table. In exceptional cases the referee may designate another area.",
+    "ruleRefs": [
+      "5.2",
+      "11.8",
+      "Appendix 5"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-013",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player B leans the upper body far forward over B's end of the table. The ball does not touch B's body.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for invasion"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for body touch"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player B"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Leaning the upper body into the playing area is allowed. Only if the ball touches the body (other than the bat or batting hand) is it a body touch.",
+    "ruleRefs": [
+      "16.8 (note)",
+      "16.5.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-014",
+    "level": "national",
+    "topics": [
+      "goal-area"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A shoots. Player B's bat touches the ball inside B's goal area, and the ball goes directly into B's goal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Goal: 2 points to Player A"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for illegal defence"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for illegal defence, plus a warning"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "If the bat or batting hand touches the ball inside the goal area and the ball moves directly into the goal, it is a goal: 2 points to the opponent.",
+    "ruleRefs": [
+      "16.6.1",
+      "16.2.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-015",
+    "level": "national",
+    "topics": [
+      "goal-area",
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player B's bat touches the ball inside B's goal area. The ball then bounces against B's non-batting hand and rolls back onto the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player A for body touch"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player A for illegal defence"
+      },
+      {
+        "id": "c",
+        "text": "2 points to Player A"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player A for illegal defence and 1 point for body touch"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "If the ball touches the bat or batting hand in the goal area and then touches another part of the body, the call is body touch, not illegal defence: 1 point to the opponent. Only one playing mistake is called.",
+    "ruleRefs": [
+      "16.6.1",
+      "16.5.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-016",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player B hits the ball hard. It jumps up, hits a ceiling lamp and falls back onto the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player A for out"
+      },
+      {
+        "id": "b",
+        "text": "Dead ball, re-serve"
+      },
+      {
+        "id": "c",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "d",
+        "text": "Let, re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "If the ball hits the ceiling or any other object that is not part of the table or a player's batting hand, it is out: 1 point to the opponent of the player who hit it.",
+    "ruleRefs": [
+      "16.7.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-017",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A hits the ball. It jumps and lands on the top of the contact board at B's end before rolling back onto the table.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player B for out"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player B for invasion"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The top of the contact board is not part of the playing area. A hit ball that touches the top of the contact board is out: 1 point to the opponent.",
+    "ruleRefs": [
+      "1",
+      "16.7.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-018",
+    "level": "national",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves but does not hit the ball properly; it barely moves. A swings again and hits the ball a second time towards the sidewall.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Irregular serve: 1 point to Player B"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues, because both touches were within 2 seconds"
+      },
+      {
+        "id": "c",
+        "text": "Re-serve"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player A for delaying the game"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Touching the ball with the bat more than once when serving is an irregular serve: 1 point to the opponent. A second attempt after a poor first contact is not allowed, even within the 2 seconds. (Only a complete miss without any audible sound allows another swing.)",
+    "ruleRefs": [
+      "16.3",
+      "16.3.1",
+      "16.3.6"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-019",
+    "level": "national",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves and misses the ball. The referee hears the bat hit the playing deck.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Irregular serve: 1 point to Player B; the swing counts as a serve"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "Player A may swing again within the 2 seconds"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "If the server misses the ball and the referee hears a sound, the swing counts as one serve. Missing the ball is listed under irregular serve: 1 point to the opponent. Without any audible sound, the player may swing again until the 2 seconds have passed.",
+    "ruleRefs": [
+      "16.3",
+      "16.3.6"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-020",
+    "level": "national",
+    "topics": [
+      "procedures"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "In which order does the referee start play at the beginning of a set?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "Roll the ball to the server, announce the serve number, announce the score, ask the returner if ready, ask the server if ready, one whistle"
+      },
+      {
+        "id": "b",
+        "text": "Roll the ball to the server, announce the score, announce the serve number, ask the server if ready, ask the returner if ready, one whistle"
+      },
+      {
+        "id": "c",
+        "text": "Announce the score, roll the ball to the server, ask both players together, one whistle"
+      },
+      {
+        "id": "d",
+        "text": "Roll the ball to the server, ask the returner if ready, ask the server if ready, announce the serve number and the score, one whistle"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The referee rolls the ball to the serving player and announces first the serve number, then the score, both referred to the server. Then the referee asks first the returner and then the server if they are ready. After both say \"yes\", the referee whistles once. The same procedure is used at the start of the match, each set, after time-outs, change of sides and unusually long breaks.",
+    "ruleRefs": [
+      "15.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-001",
+    "level": "international",
+    "topics": [
+      "warnings-penalties",
+      "equipment"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Set 1 has just ended. Before changing sides, Player A lifts the mask to wipe the eyes. A has not asked for permission.",
+    "options": [
+      {
+        "id": "a",
+        "text": "2-point penalty: the next set starts 2:0 for Player B"
+      },
+      {
+        "id": "b",
+        "text": "No sanction, touching the mask between sets is allowed"
+      },
+      {
+        "id": "c",
+        "text": "Warning to Player A"
+      },
+      {
+        "id": "d",
+        "text": "2-point penalty: 2 points are added to Player B's score in the finished set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Between sets, the player may touch the mask only after changing sides. Touching it before is a penalty without warning (2 points). If a penalty is given before the set has begun, the set starts 2:0 for the player who receives the points.",
+    "ruleRefs": [
+      "11.3",
+      "20.1",
+      "20.4.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-002",
+    "level": "international",
+    "topics": [
+      "warnings-penalties",
+      "procedures"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "International tournament (official language English). After a goal, Player A's coach cheers to the player in their own national language.",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 points to Player B and the coach is sent out of the playing room"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "Warning to the coach"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player A"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "When the ball is not in play, a coach may cheer only in the official languages of the tournament. An infraction is treated under 20.4.3: immediate 2-point penalty, serious misconduct, and the referee sends the coach out of the playing room.",
+    "ruleRefs": [
+      "11.7",
+      "20.4.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-003",
+    "level": "international",
+    "topics": [
+      "team-play",
+      "warnings-penalties"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Team match. Player A1 received a warning for talking during play. Later, player A3 scrapes the bat on the table in a disturbing way.",
+    "options": [
+      {
+        "id": "a",
+        "text": "2-point penalty: 2 points to Team B"
+      },
+      {
+        "id": "b",
+        "text": "Warning to player A3"
+      },
+      {
+        "id": "c",
+        "text": "Warning to Team A"
+      },
+      {
+        "id": "d",
+        "text": "No decision, play continues"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "In team play, warnings are valid for the whole match and for the whole team. A second infraction from the 20.3 list by any player of the same team is penalised with 2 points to the opponent.",
+    "ruleRefs": [
+      "20.3",
+      "23.15"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-004",
+    "level": "international",
+    "topics": [
+      "team-play",
+      "serve"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Team match. A1 served 3 times against B1. Then B1 served 3 times against A2. Who serves next, against whom?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "A2 serves against B2"
+      },
+      {
+        "id": "b",
+        "text": "A2 serves against B1"
+      },
+      {
+        "id": "c",
+        "text": "A3 serves against B2"
+      },
+      {
+        "id": "d",
+        "text": "B2 serves against A2"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "After serving 3 times a player leaves the table. B1 leaves after serving, A2 stays and serves 3 times against B2. The order continues: B2 against A3, A3 against B3, B3 against A1, A1 against B1.",
+    "ruleRefs": [
+      "23.2",
+      "24"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-005",
+    "level": "international",
+    "topics": [
+      "team-play",
+      "change-sides",
+      "time-outs"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "multiple",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Which statements about a team match are correct? Select all that apply.",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "Teams change sides when one team reaches 16 points"
+      },
+      {
+        "id": "b",
+        "text": "Each team has one 60-second time-out per match"
+      },
+      {
+        "id": "c",
+        "text": "The match is won at 31 points with a 2-point margin"
+      },
+      {
+        "id": "d",
+        "text": "Each team has one 60-second time-out per 11 points scored"
+      },
+      {
+        "id": "e",
+        "text": "Teams change sides only if the score is level at 15:15"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "fixedOrder": true,
+    "explanation": "A team match is one set to 31 points with a 2-point margin. Teams change sides when one team reaches 16. Each team has one time-out of 60 seconds per match.",
+    "ruleRefs": [
+      "6",
+      "23.1",
+      "23.13",
+      "23.14"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-006",
+    "level": "international",
+    "topics": [
+      "team-play"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "multiple",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Which statements about substitutions in a team match are correct? Select all that apply.",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "Each team may make one substitution per match"
+      },
+      {
+        "id": "b",
+        "text": "The coach or the captain requests it during a break in play"
+      },
+      {
+        "id": "c",
+        "text": "If the player at the table is substituted, the new player continues with that player's serves or returns"
+      },
+      {
+        "id": "d",
+        "text": "The substituted player may return later in the same match"
+      },
+      {
+        "id": "e",
+        "text": "A substitution may be made while the ball is in play if the player is injured"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "fixedOrder": true,
+    "explanation": "Each team has one substitution per match, requested by the coach or captain during a break in play. 30 seconds are allowed. A player substituted at the table is replaced in the current serve or return sequence. The substituted player may not play again in that match.",
+    "ruleRefs": [
+      "23.8",
+      "23.8.1",
+      "23.8.2",
+      "23.8.4",
+      "23.8.5"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-007",
+    "level": "international",
+    "topics": [
+      "team-play"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Team A plays with two female players and one male player. The coach requests to substitute the male player with a female substitute.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The substitution is not allowed"
+      },
+      {
+        "id": "b",
+        "text": "The substitution is allowed"
+      },
+      {
+        "id": "c",
+        "text": "Allowed, but the team gets a warning"
+      },
+      {
+        "id": "d",
+        "text": "Allowed only for medical reasons"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The line-up must be mixed: at least one male and one female player. After a substitution, the team must still be mixed. Replacing the only male player with a female player breaks this rule.",
+    "ruleRefs": [
+      "22.2",
+      "23.8.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-008",
+    "level": "international",
+    "topics": [
+      "equipment"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "multiple",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "During the equipment check, which bats must the referee reject? Select all that apply.",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "Total length 310 mm"
+      },
+      {
+        "id": "b",
+        "text": "Plastic blade without any soft cover"
+      },
+      {
+        "id": "c",
+        "text": "Blade width 75 mm"
+      },
+      {
+        "id": "d",
+        "text": "Handle diameter 38 mm"
+      },
+      {
+        "id": "e",
+        "text": "Wooden blade 6 mm thick with a 2 mm soft cover on each side"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "fixedOrder": true,
+    "explanation": "Maximum total length is 300 mm. Blades with a non-wooden surface must be covered with soft material. Blade width up to 75 mm, handle diameter up to 40 mm and a total blade thickness of 10 mm including soft cover are allowed.",
+    "ruleRefs": [
+      "3",
+      "10.2",
+      "Appendix 2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-009",
+    "level": "international",
+    "topics": [
+      "equipment"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Equipment check. At the knuckles the bare hand measures 85 mm wide and 25 mm thick. With the glove it measures 130 mm wide and 45 mm thick.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reject: the width difference is more than 40 mm"
+      },
+      {
+        "id": "b",
+        "text": "Approve: the thickness difference is within 25 mm"
+      },
+      {
+        "id": "c",
+        "text": "Approve: only the thickness is measured"
+      },
+      {
+        "id": "d",
+        "text": "Reject: the glove may not be wider than the hand at all"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Gloves are measured at the wrist, the knuckles and the middle finger joints, first the bare hand, then the gloved hand. The gloved hand may be at most 40 mm wider (20 mm on each side) and at most 25 mm thicker. 45 mm wider exceeds the limit, so the glove is rejected.",
+    "ruleRefs": [
+      "4.3",
+      "Appendix 3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-010",
+    "level": "international",
+    "topics": [
+      "faults",
+      "equipment"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, the ball touches the sweatband on Player B's batting arm, about 10 cm above the wrist joint.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player A for body touch"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for invasion"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The batting hand is the hand up to and including 60 mm past the wrist joint, including hand protection. Arm protection beyond that, such as a sweatband, is not part of the batting hand. Ball contact there is a body touch.",
+    "ruleRefs": [
+      "4.3",
+      "6",
+      "16.5.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-011",
+    "level": "international",
+    "topics": [
+      "equipment"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Equipment check before the match. Player A wears a soft sleep mask. The referee sees no light through it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mask is not allowed; the player must use a compliant mask"
+      },
+      {
+        "id": "b",
+        "text": "Allowed, because no light gets through"
+      },
+      {
+        "id": "c",
+        "text": "Allowed, if the referee tapes the edges"
+      },
+      {
+        "id": "d",
+        "text": "Allowed in national tournaments only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Only darkened alpine ski goggles or adequate alternatives such as goalball masks are allowed. The mask must be semi-rigid or rigid. Sleep masks are explicitly prohibited, even if they block all light. Players who medically cannot wear a standard mask must wear occlusive eye patches.",
+    "ruleRefs": [
+      "4.1",
+      "10.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-012",
+    "level": "international",
+    "topics": [
+      "faults",
+      "procedures"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player B hits the ball and the blade of B's bat breaks off. The ball continues and goes into Player A's goal before the referee whistles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No goal; after the bat is replaced, play resumes with a re-serve"
+      },
+      {
+        "id": "b",
+        "text": "Goal: 2 points to Player B"
+      },
+      {
+        "id": "c",
+        "text": "1 point to Player A for bat infraction"
+      },
+      {
+        "id": "d",
+        "text": "Goal counts, then the bat is replaced"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "When a bat breaks, play cannot continue. Points scored after the bat broke do not count, even if the referee has not yet whistled. After the bat is replaced, play resumes with a re-serve.",
+    "ruleRefs": [
+      "16.9.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-013",
+    "level": "international",
+    "topics": [
+      "time-outs",
+      "match-format"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "The referee calls a medical time-out for Player A. After 5 minutes Player A is not ready to play.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Player A gives up the match: A keeps the points already won and loses with the lowest possible result"
+      },
+      {
+        "id": "b",
+        "text": "Player A loses by default: all of A's points are annulled"
+      },
+      {
+        "id": "c",
+        "text": "The match is suspended and continued later"
+      },
+      {
+        "id": "d",
+        "text": "Player A gets a second medical time-out"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "After a medical time-out, the player must be ready within 5 minutes; otherwise the player gives up the match. In contrast, a player who does not return within 5 minutes from a toilet visit loses by default.",
+    "ruleRefs": [
+      "6",
+      "18.3.2",
+      "18.4.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-014",
+    "level": "international",
+    "topics": [
+      "warnings-penalties",
+      "match-format"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the result of the match?",
+    "scenario": "Best of 3 sets. Player A won set 1 11-8. In set 2, at 5-5, Player A throws the bat after a disputed call.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Player B wins 11-0, 11-0"
+      },
+      {
+        "id": "b",
+        "text": "Player B wins 8-11, 11-5, 11-0"
+      },
+      {
+        "id": "c",
+        "text": "Player B wins 8-11, 11-5"
+      },
+      {
+        "id": "d",
+        "text": "Player B wins 11-0, 11-5"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Throwing the bat is very serious misconduct: the player loses the match by default. A player who loses by default loses all sets without any scored points; points and sets already won are annulled.",
+    "ruleRefs": [
+      "6",
+      "20.5.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-015",
+    "level": "international",
+    "topics": [
+      "procedures"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "The match is scheduled for 10:00. The previous match on the same table ends at 10:12; a referee is present. Player A arrives at 10:15.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The match is played normally"
+      },
+      {
+        "id": "b",
+        "text": "Player A loses by default"
+      },
+      {
+        "id": "c",
+        "text": "Warning to Player A for lateness"
+      },
+      {
+        "id": "d",
+        "text": "2-point penalty: the match starts 2:0 for Player B"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "A player who is more than 5 minutes late loses by default. The 5-minute count starts when at least one referee is present and, in case of delay, the table is free. Player A arrived 3 minutes after the table became free.",
+    "ruleRefs": [
+      "20.5.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-016",
+    "level": "international",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A places the ball on the playing deck and lets go. Because the table is slightly uneven, the ball rolls a few centimetres by itself. A hits it within 2 seconds of the whistle and the serve bounces once off the sidewall before passing under the centre screen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B for irregular serve"
+      },
+      {
+        "id": "c",
+        "text": "Re-serve"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player A"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "After the ball has been placed and released, it may roll before it is hit, as long as the player does not move it on purpose (for example because the table is not completely even). Only intentional rolling is an irregular serve.",
+    "ruleRefs": [
+      "16.3.5"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-017",
+    "level": "international",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "After the whistle, Player A moves the ball to a different position on the playing deck and serves 1.5 seconds after the whistle. The ball bounces once off the sidewall and passes under the centre screen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B for irregular serve"
+      },
+      {
+        "id": "c",
+        "text": "Re-serve"
+      },
+      {
+        "id": "d",
+        "text": "Warning to Player A for delaying the game"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The server may move the ball to a different position on the playing surface even after the whistle. The serve must still be made within 2 seconds of the whistle.",
+    "ruleRefs": [
+      "16.3.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-018",
+    "level": "international",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A swings at the ball and misses it without any audible sound. Within the 2 seconds A swings again and serves correctly: one sidewall bounce, then under the centre screen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B for irregular serve"
+      },
+      {
+        "id": "c",
+        "text": "The first swing counts as the 1st serve"
+      },
+      {
+        "id": "d",
+        "text": "Re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "If the server misses the ball and the referee hears no sound, the player may swing again until the 2-second limit is reached. A legal hit within the 2 seconds is a valid serve.",
+    "ruleRefs": [
+      "16.3.6"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-019",
+    "level": "international",
+    "topics": [
+      "procedures",
+      "serve"
+    ],
+    "importance": "standard",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "Player A wins the coin toss and chooses the starting side of the table. Who serves first in set 1 and in set 2?",
+    "scenario": null,
+    "options": [
+      {
+        "id": "a",
+        "text": "Set 1: Player B, set 2: Player A"
+      },
+      {
+        "id": "b",
+        "text": "Set 1: Player A, set 2: Player B"
+      },
+      {
+        "id": "c",
+        "text": "Set 1: Player B, set 2: Player B"
+      },
+      {
+        "id": "d",
+        "text": "A second coin toss decides the serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The coin-toss winner chooses either to take the serve or to choose the starting side. If the winner chooses the side, the opponent serves first. The first serve alternates between sets.",
+    "ruleRefs": [
+      "12.1",
+      "14.1"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "I-020",
+    "level": "international",
+    "topics": [
+      "match-format"
+    ],
+    "importance": "standard",
+    "frequency": "rare",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "National tournament with time-limited matches. Time expires in the deciding set at 9-9.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A coin toss decides who serves; the next point wins"
+      },
+      {
+        "id": "b",
+        "text": "Player A wins, because A scored last"
+      },
+      {
+        "id": "c",
+        "text": "An extra 2 minutes are played"
+      },
+      {
+        "id": "d",
+        "text": "The match continues until one player reaches 11"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "Time-limited matches are not allowed at IBSA Sanctioned Events, but other organisers may use them. When time expires with a draw, a coin toss decides who serves, and the next point wins.",
+    "ruleRefs": [
+      "9.1",
+      "9.2",
+      "9.3"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  }
+]

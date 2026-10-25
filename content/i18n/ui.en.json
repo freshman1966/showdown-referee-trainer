@@ -1,0 +1,205 @@
+{
+  "_meta": {
+    "locale": "en",
+    "note": "All user-facing UI text. Placeholders in {curly} braces are filled by the app. Keys starting with _ are not shown."
+  },
+  "app": {
+    "name": "Call it.",
+    "subtitle": "Showdown Rules Quiz",
+    "tagline": "Make the right call.",
+    "intro": "Showdown rules quiz for referees. Based on the IBSA Showdown Rules {edition}.",
+    "disclaimer": "Not an official IBSA publication. The IBSA rulebook is the binding source.",
+    "previewBanner": "PREVIEW – draft content, not reviewed"
+  },
+  "nav": {
+    "home": "Levels",
+    "settings": "Settings",
+    "about": "About",
+    "done": "Done",
+    "quitLevel": "Quit level",
+    "skipToContent": "Skip to main content"
+  },
+  "home": {
+    "levelsHeading": "Levels",
+    "practiceLink": "Practice all unlocked questions",
+    "bestScore": "Best score {player} : {rulebook}",
+    "notPlayed": "Not played yet",
+    "runInfo": "{count} questions · pass mark {passMark}",
+    "startLevel": "Start {level}",
+    "playAgain": "Play again",
+    "lockedHint": "Pass {previousLevel} to unlock.",
+    "state": {
+      "passed": "Passed",
+      "unlocked": "Unlocked",
+      "locked": "Locked",
+      "comingSoon": "Coming soon"
+    }
+  },
+  "levels": {
+    "trainee": {
+      "name": "Trainee",
+      "number": "1",
+      "description": "Core rules: match format, scoring, serve, basic faults, time-outs and signals."
+    },
+    "national": {
+      "name": "National",
+      "number": "2",
+      "description": "Match scenarios: calls that are easy to confuse, warnings and penalties, procedures."
+    },
+    "international": {
+      "name": "International",
+      "number": "3",
+      "description": "Edge cases: sequences of events, team play, equipment checks and rare situations."
+    }
+  },
+  "levelStart": {
+    "heading": "{level}",
+    "questions": "{count} questions",
+    "passMark": "Pass mark: {passMark} of {count} correct.",
+    "topicsHeading": "Topics in this level",
+    "scoringHeading": "How scoring works",
+    "scoringText": "Every correct answer is a goal for you: 2 points. Every wrong answer is 2 points for the Rulebook. Questions with several correct answers count only if you select exactly the correct ones.",
+    "timerOn": "Time per question: {seconds} seconds. An unanswered question counts as wrong.",
+    "timerOff": "No time limit.",
+    "start": "Start"
+  },
+  "practice": {
+    "heading": "Practice",
+    "intro": "Questions from all unlocked levels. No pass mark. Results do not count towards your progress.",
+    "start": "Start practice"
+  },
+  "question": {
+    "progress": "{level} · Serve {current} of {total}",
+    "progressPractice": "Practice · Question {current} of {total}",
+    "progressLabel": "Progress",
+    "scoreLine": "You {player} : {rulebook} Rulebook",
+    "scoreLabel": "Score: you {player}, Rulebook {rulebook}",
+    "streak": "Streak {count}",
+    "scenarioLabel": "Scenario",
+    "selectAll": "Select all that apply.",
+    "submit": "Submit answer",
+    "noSelection": "Select an answer first.",
+    "timeRemaining": "{seconds} seconds left",
+    "timeWarning": "15 seconds",
+    "timeUp": "Time is up. The answer counts as wrong."
+  },
+  "feedback": {
+    "correctHeading": "Correct. Goal for you.",
+    "incorrectHeading": "Incorrect. Point for the Rulebook.",
+    "timeUpHeading": "Time is up. Point for the Rulebook.",
+    "labelCorrectAnswer": "Correct answer",
+    "labelYourAnswerCorrect": "Your answer · correct",
+    "labelYourAnswerIncorrect": "Your answer · incorrect",
+    "labelMissed": "Correct answer · not selected",
+    "rules": "Rules {refs}",
+    "rule": "Rule {refs}",
+    "next": "Next serve",
+    "finish": "See result"
+  },
+  "result": {
+    "label": "{level} · result",
+    "passed": "Passed",
+    "notPassed": "Not passed",
+    "practiceDone": "Practice finished",
+    "correctCount": "{correct} of {total} correct. Pass mark: {passMark}.",
+    "newBest": "New best score for this level.",
+    "newBadge": "New badge",
+    "levelUnlocked": "{level} level unlocked.",
+    "reviewHeading": "To review ({count})",
+    "reviewNone": "No wrong answers. Clean sheet.",
+    "yourAnswer": "Your answer:",
+    "correctAnswer": "Correct:",
+    "noAnswer": "No answer (time up)",
+    "showAll": "Show all {count} answers",
+    "hideAll": "Hide answers",
+    "startNext": "Start {level}",
+    "retry": "Retry {level}",
+    "backToLevels": "Back to levels"
+  },
+  "badges": {
+    "trainee": {
+      "name": "Trainee Referee",
+      "description": "Passed the Trainee level."
+    },
+    "national": {
+      "name": "National Referee",
+      "description": "Passed the National level."
+    },
+    "international": {
+      "name": "International Referee",
+      "description": "Passed the International level."
+    },
+    "cleanSheet": {
+      "name": "Clean sheet",
+      "description": "Finished a level run without a wrong answer."
+    },
+    "rulebook": {
+      "name": "Rulebook",
+      "description": "Answered every question of a level correctly at least once."
+    }
+  },
+  "settings": {
+    "heading": "Settings",
+    "timerLegend": "Time per question",
+    "timerOff": "Off",
+    "timer90": "90 s",
+    "timer45": "45 s",
+    "timerHint": "With a timer, an unanswered question counts as wrong.",
+    "themeLegend": "Theme",
+    "themeSystem": "Same as device",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeHighContrast": "High contrast",
+    "sound": "Whistle sounds",
+    "soundHint": "A whistle on submit and a double whistle for a correct answer. The result is always shown as text.",
+    "language": "Language",
+    "reset": "Reset progress",
+    "resetDialogHeading": "Reset all progress?",
+    "resetDialogText": "This deletes unlocked levels, best scores and badges on this device. Settings are kept.",
+    "resetConfirm": "Reset progress",
+    "resetCancel": "Cancel",
+    "resetDone": "Progress has been reset.",
+    "storageUnavailable": "Your browser does not allow saving. Progress is kept only until you close this page."
+  },
+  "about": {
+    "heading": "About",
+    "purpose": "This quiz trains Showdown referees on the IBSA Showdown Rules. Every answer is explained with a reference to the rule.",
+    "editionHeading": "Rule edition",
+    "editionText": "IBSA Showdown Rules {edition}, valid from {validFrom} to {validTo}.",
+    "rulesLink": "IBSA Showdown rules and downloads",
+    "rulesUrl": "https://ibsasport.org/sports/showdown/rules-and-downloads/",
+    "disclaimer": "This is not an official IBSA publication. If an answer here differs from the IBSA rulebook, the rulebook applies.",
+    "feedbackHeading": "Found an error?",
+    "feedbackText": "Please report rule errors or unclear questions, with the question number shown below each explanation.",
+    "feedbackContact": "[CONTACT – to be provided by Stefan]",
+    "privacyHeading": "Privacy",
+    "privacyText": "No account, no cookies, no tracking. Your progress is stored only in this browser on this device.",
+    "creditsHeading": "Credits",
+    "creditsText": "Questions written and reviewed by Showdown referees. Font: Atkinson Hyperlegible by the Braille Institute."
+  },
+  "topics": {
+    "match-format": "Match format",
+    "serve": "Serve",
+    "faults": "Faults",
+    "goal-area": "Goal area",
+    "dead-ball": "Dead ball",
+    "time-outs": "Time-outs",
+    "change-sides": "Change of sides",
+    "warnings-penalties": "Warnings and penalties",
+    "equipment": "Equipment",
+    "procedures": "Procedures",
+    "signals": "Signals",
+    "team-play": "Team play"
+  },
+  "errors": {
+    "loadFailed": "The questions could not be loaded. Check your connection and reload the page.",
+    "notFound": "Page not found.",
+    "reload": "Reload"
+  },
+  "a11y": {
+    "questionId": "Question {id}",
+    "correctAnnouncement": "Correct. Score: you {player}, Rulebook {rulebook}.",
+    "incorrectAnnouncement": "Incorrect. Score: you {player}, Rulebook {rulebook}.",
+    "levelLocked": "{level}, locked"
+  }
+}
