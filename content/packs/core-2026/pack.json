@@ -4,6 +4,8 @@
     "en": "IBSA Showdown Rules 2026–2028"
   },
   "edition": "2026-2028",
+  "validFrom": "2026-02-01",
+  "validTo": "2028-12-31",
   "levels": [
     "trainee",
     "national",

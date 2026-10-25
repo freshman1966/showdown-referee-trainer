@@ -12,9 +12,15 @@ Requires Node 22.12 or later.
 ```sh
 npm install
 npm run dev            # dev server, includes draft questions
+npm run validate       # content checks (spec 6.4); add -- --mode=production|preview
+npm test               # unit, integration and axe-core tests, token contrast
 npm run build          # production build: approved questions only
 npm run build:preview  # preview build: all questions, preview banner
 ```
+
+Content lives in `content/` and is checked against `schema/` on every build. A level with no
+approved questions is shown as "Coming soon" in production; a level with some but fewer than
+12 approved questions fails the production build.
 
 ## Deployment (Cloudflare Pages)
 

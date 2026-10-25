@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://showdown-referee-trainer/schema/pack.schema.json",
+  "title": "Question pack metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "edition", "levels", "defaultLocale"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": {
+      "type": "object",
+      "description": "Pack title per locale.",
+      "minProperties": 1,
+      "propertyNames": { "$ref": "#/$defs/locale" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "edition": { "$ref": "#/$defs/edition" },
+    "validFrom": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "First day the rule edition is valid (ISO date)." },
+    "validTo": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "Last day the rule edition is valid (ISO date)." },
+    "levels": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["trainee", "national", "international"] }
+    },
+    "defaultLocale": { "$ref": "#/$defs/locale" }
+  },
+  "$defs": {
+    "locale": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "edition": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{4}$" }
+  }
+}

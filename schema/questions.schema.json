@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://showdown-referee-trainer/schema/questions.schema.json",
+  "title": "Questions of one pack in one locale",
+  "type": "array",
+  "items": { "$ref": "#/$defs/question" },
+  "$defs": {
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "level", "topics", "importance", "frequency", "type", "difficulty", "edition", "status",
+        "prompt", "scenario", "options", "correct", "fixedOrder", "explanation", "ruleRefs", "media", "requiresVision"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[TNI]-[0-9]{3,}$" },
+        "level": { "enum": ["trainee", "national", "international"] },
+        "topics": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/topic" }
+        },
+        "importance": { "enum": ["critical", "standard"] },
+        "frequency": { "enum": ["common", "rare"] },
+        "type": { "enum": ["single", "multiple"] },
+        "difficulty": { "enum": [1, 2, 3] },
+        "edition": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{4}$" },
+        "status": { "enum": ["draft", "reviewed", "approved"] },
+        "prompt": { "type": "string", "minLength": 1 },
+        "scenario": { "type": ["string", "null"], "minLength": 1 },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "text"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z]$" },
+              "text": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "correct": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z]$" }
+        },
+        "fixedOrder": { "type": "boolean" },
+        "explanation": { "type": "string", "minLength": 1 },
+        "ruleRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "media": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["type", "src", "alt"],
+              "properties": {
+                "type": { "const": "svg" },
+                "src": { "type": "string", "pattern": "^media/[A-Za-z0-9._-]+\\.svg$" },
+                "alt": { "type": "string", "minLength": 1 },
+                "description": { "type": "string", "minLength": 1 }
+              }
+            }
+          ]
+        },
+        "requiresVision": { "type": "boolean" },
+        "reviewNote": { "type": ["string", "null"] }
+      }
+    },
+    "topic": {
+      "enum": [
+        "match-format", "serve", "faults", "goal-area", "dead-ball", "time-outs",
+        "change-sides", "warnings-penalties", "equipment", "procedures", "signals", "team-play"
+      ]
+    }
+  }
+}

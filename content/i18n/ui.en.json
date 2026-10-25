@@ -22,6 +22,7 @@
   "home": {
     "levelsHeading": "Levels",
     "practiceLink": "Practice all unlocked questions",
+    "badgesHeading": "Your badges",
     "bestScore": "Best score {player} : {rulebook}",
     "notPlayed": "Not played yet",
     "runInfo": "{count} questions · pass mark {passMark}",
@@ -102,6 +103,7 @@
     "notPassed": "Not passed",
     "practiceDone": "Practice finished",
     "correctCount": "{correct} of {total} correct. Pass mark: {passMark}.",
+    "correctCountPractice": "{correct} of {total} correct.",
     "newBest": "New best score for this level.",
     "newBadge": "New badge",
     "levelUnlocked": "{level} level unlocked.",

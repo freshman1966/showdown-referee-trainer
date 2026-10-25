@@ -1,24 +1,23 @@
 import { defineConfig } from 'vite'
 import preact from '@preact/preset-vite'
-
-// Preview builds include draft questions and show the preview banner (spec 6.3, 8).
-// Cloudflare Pages sets CF_PAGES_BRANCH; every branch except main is a preview deploy.
-const PRODUCTION_BRANCH = 'main'
+import { resolveBuildMode } from './scripts/build-mode.ts'
+import { contentPlugin } from './scripts/content-plugin.ts'
 
 export default defineConfig(({ command, mode }) => {
-  const branch = process.env.CF_PAGES_BRANCH
-  const isPreview =
-    command === 'serve' ||
-    mode === 'preview' ||
-    (branch !== undefined && branch !== PRODUCTION_BRANCH)
+  const buildMode = resolveBuildMode({ serve: command === 'serve', mode })
 
   return {
-    plugins: [preact()],
+    plugins: [preact(), contentPlugin(buildMode)],
     define: {
-      __PREVIEW__: JSON.stringify(isPreview),
+      __PREVIEW__: JSON.stringify(buildMode === 'preview'),
     },
     build: {
       target: 'es2022',
+    },
+    test: {
+      environment: 'jsdom',
+      include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts'],
+      setupFiles: ['src/test/setup.ts'],
     },
   }
 })
