@@ -83,7 +83,7 @@ Badges are text plus an icon; the text carries the meaning.
 | Type | UI | Scoring |
 |---|---|---|
 | `single` | radio group in a `fieldset` with `legend` | correct if the chosen option is correct |
-| `multiple` | checkbox group, prompt says "Select all that apply" | correct only if the selected set equals the correct set |
+| `multiple` | checkbox group; the app shows the hint `question.selectAll` ("Select all that apply.") below the prompt. Question prompts never contain this hint. | correct only if the selected set equals the correct set |
 
 Planned for later versions (not v1): `order` (put steps of a procedure in order, keyboard-operable move up/down buttons), and two-step questions (decision, then sanction).
 

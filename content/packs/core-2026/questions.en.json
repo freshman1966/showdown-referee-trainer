@@ -644,7 +644,7 @@
     "difficulty": 2,
     "edition": "2026-2028",
     "status": "draft",
-    "prompt": "Which statements about a regular time-out are correct? Select all that apply.",
+    "prompt": "Which statements about a regular time-out are correct?",
     "scenario": null,
     "options": [
       {
@@ -1192,7 +1192,7 @@
     "difficulty": 2,
     "edition": "2026-2028",
     "status": "draft",
-    "prompt": "Which infractions lead to an immediate 2-point penalty, without a warning first? Select all that apply.",
+    "prompt": "Which infractions lead to an immediate 2-point penalty, without a warning first?",
     "scenario": null,
     "options": [
       {
@@ -2023,7 +2023,7 @@
     "difficulty": 2,
     "edition": "2026-2028",
     "status": "draft",
-    "prompt": "Which statements about a team match are correct? Select all that apply.",
+    "prompt": "Which statements about a team match are correct?",
     "scenario": null,
     "options": [
       {
@@ -2076,7 +2076,7 @@
     "difficulty": 3,
     "edition": "2026-2028",
     "status": "draft",
-    "prompt": "Which statements about substitutions in a team match are correct? Select all that apply.",
+    "prompt": "Which statements about substitutions in a team match are correct?",
     "scenario": null,
     "options": [
       {
@@ -2175,7 +2175,7 @@
     "difficulty": 3,
     "edition": "2026-2028",
     "status": "draft",
-    "prompt": "During the equipment check, which bats must the referee reject? Select all that apply.",
+    "prompt": "During the equipment check, which bats must the referee reject?",
     "scenario": null,
     "options": [
       {
