@@ -138,6 +138,7 @@ Target: WCAG 2.2 level AA. Every question must be answerable from its text alone
 ```json
 {
   "id": "T-006",
+  "version": 1,
   "level": "trainee",
   "topics": ["serve", "faults"],
   "importance": "critical",
@@ -254,3 +255,56 @@ Screen patterns:
 - **Home:** level cards with state text "Passed" / "Unlocked" / "Locked", best score, start button on the next open level, link "Practice all unlocked questions", footer disclaimer.
 - **Settings:** time per question (Off / 90 s / 45 s), theme (Same as device / Light / Dark / High contrast), whistle sounds checkbox (off), language select, "Reset progress" (with confirmation dialog).
 - **Desktop (≥ 900 px):** content max 1080 px; question column plus a side panel with level, progress, score, streak and pass mark. Below 900 px the panel moves above the question as the header.
+
+## 13. Review mode (preview builds only)
+
+Referees review the questions in the preview build and comment through a Google Form. The comments are collected in a Google Sheet. Review mode is never part of the production build.
+
+### 13.1 Versions
+
+- **Question version** (`version` in each question, integer, starts at 1): increases by 1 whenever a player-visible field of that question changes: `prompt`, `scenario`, `options`, `correct`, `explanation`, `interpretation`, `ruleRefs`. Changes to `status`, `importance`, `frequency`, `difficulty`, `topics` or `reviewNote` do not change the version.
+- **Question key**: `<id> v<version>`, e.g. `N-024 v2`. Every comment refers to a question key.
+- **Set version** (`contentVersion` in `pack.json`, format `YYYY-MM-DD.n`): changes whenever any question of the pack changes. Shown in the footer of the preview build ("Question set 2026-11-01.1").
+- **Lock check**: the repository holds `content/packs/<pack>/question-lock.json` with one SHA-256 hash per question key, calculated over the player-visible fields listed above (canonical JSON). `npm run validate` fails when a question's hash differs from the locked hash for the same key (text changed without a version increase). `npm run content:lock` adds the hashes of new keys; it never overwrites an existing key.
+
+### 13.2 "All questions" page
+
+- Route `/review` in the preview build; link "All questions" in the header next to Settings.
+- Content per level (heading per level), per question:
+  - question key and topics
+  - scenario, prompt, all options with the correct ones marked "Correct answer" (in text, not only by colour)
+  - explanation, "How this answer is derived" (if present), rule references
+  - link "Comment on this question" (see 13.3)
+- Filter: level, topic, "only questions with an interpretation". Plain links to each question (`/review#N-024`).
+- Uses the same accessibility rules as the rest of the app (headings per question, lists for options).
+
+### 13.3 Comment links
+
+- Shown in the preview build below every explanation in the quiz (feedback panel and result review list) and on every question of the "All questions" page.
+- Link target: the Google Form with two pre-filled fields:
+  `<formUrl>?usp=pp_url&<entryQuestionKey>=<question key>&<entrySetVersion>=<contentVersion>` (values URL-encoded).
+- `formUrl`, `entryQuestionKey` and `entrySetVersion` come from `content/review.json` (maintained by Cowork). If `formUrl` is empty, the links are not shown.
+- Opens in a new tab; the link text says so ("Comment on this question (opens Google Form in a new tab)" via `ui.en.json`).
+
+### 13.4 Export for the review sheet
+
+`npm run export:questions` writes `exports/questions-<contentVersion>.csv` (UTF-8, comma-separated, RFC 4180 quoting), one row per question, columns in this order:
+
+| Column | Content |
+|---|---|
+| key | `N-024 v2` |
+| id | `N-024` |
+| version | `2` |
+| setVersion | contentVersion of the pack |
+| level | `national` |
+| topics | `serve; faults` |
+| status | `draft` |
+| scenario | text or empty |
+| prompt | text |
+| options | `a) text ⏎ b) text …` (one option per line inside the cell) |
+| correct | text of the correct option(s), one per line |
+| explanation | text |
+| interpretation | text or empty |
+| ruleRefs | `6; 16.3.7; 16.4.2` |
+
+Cowork imports new rows into the "Questions" tab of the review sheet. Existing rows are never changed, so every comment can be shown next to the exact question text it refers to.

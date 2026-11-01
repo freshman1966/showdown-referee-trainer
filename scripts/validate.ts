@@ -4,7 +4,8 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import Ajv2020 from 'ajv/dist/2020.js'
 import { resolveBuildMode, type BuildMode } from './build-mode.ts'
-import { readRawPacks, readUiStrings, isShipped, type RawPack } from './content.ts'
+import { readRawPacks, readReviewConfig, readUiStrings, isShipped, type RawPack, type ReviewConfig } from './content.ts'
+import { questionHash, questionKey } from './lock.ts'
 import { QUESTIONS_PER_RUN } from '../src/config.ts'
 import type { PackMeta, Question } from '../src/content/types.ts'
 
@@ -22,7 +23,12 @@ function loadSchema(name: string): object {
   return JSON.parse(readFileSync(join(SCHEMA_DIR, name), 'utf8'))
 }
 
-export function validateContent(packs: RawPack[], ui: Record<string, unknown>, mode: BuildMode): Report {
+export function validateContent(
+  packs: RawPack[],
+  ui: Record<string, unknown>,
+  mode: BuildMode,
+  review: unknown = readReviewConfig(),
+): Report {
   const errors: string[] = []
   const warnings: string[] = []
   const ajv = new Ajv2020({ allErrors: true })
@@ -78,6 +84,24 @@ export function validateContent(packs: RawPack[], ui: Record<string, unknown>, m
         errors.push(`${at}: single question needs exactly one correct option, has ${q.correct.length}`)
       }
       if (q.requiresVision && !q.media) errors.push(`${at}: requiresVision is true but media is missing`)
+    }
+
+    // Lock check (spec 13.1): the text under a locked question key must not change.
+    if (!raw.lock) {
+      errors.push(`${where}: question-lock.json is missing; run npm run content:lock`)
+    } else {
+      const lock = raw.lock
+      for (const q of base) {
+        const key = questionKey(q)
+        if (!(key in lock)) {
+          warnings.push(`${where} ${key}: not in question-lock.json; run npm run content:lock`)
+        } else if (lock[key] !== questionHash(q)) {
+          const versions = Object.keys(lock).filter((k) => k.startsWith(`${q.id} v`)).map((k) => Number(k.split(' v')[1]))
+          errors.push(
+            `${where} ${key}: player-visible text changed without a version increase; set "version" to ${Math.max(...versions) + 1}`,
+          )
+        }
+      }
     }
 
     // Translations: same ids, same non-text fields (spec 6.3).
@@ -141,7 +165,25 @@ export function validateContent(packs: RawPack[], ui: Record<string, unknown>, m
     }
   }
 
+  errors.push(...validateReviewConfig(review))
   return { errors, warnings }
+}
+
+function validateReviewConfig(review: unknown): string[] {
+  if (review === undefined) return ['content/review.json is missing']
+  const c = review as Partial<ReviewConfig>
+  const errors: string[] = []
+  if (typeof c.enabled !== 'boolean') errors.push('review.json: "enabled" must be true or false')
+  for (const k of ['formUrl', 'entryQuestionKey', 'entrySetVersion'] as const) {
+    if (typeof c[k] !== 'string') errors.push(`review.json: "${k}" must be a string`)
+  }
+  if (c.formUrl) {
+    if (!/^https:\/\/docs\.google\.com\/forms\//.test(c.formUrl)) errors.push('review.json: "formUrl" must be a Google Forms https URL')
+    for (const k of ['entryQuestionKey', 'entrySetVersion'] as const) {
+      if (!/^entry\.\d+$/.test(c[k] ?? '')) errors.push(`review.json: "${k}" must look like "entry.123456789" when formUrl is set`)
+    }
+  }
+  return errors
 }
 
 function parseMode(argv: string[]): BuildMode {

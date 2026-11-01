@@ -30,6 +30,8 @@ export interface Media {
 
 export interface Question {
   id: string
+  /** Increases whenever a player-visible field changes (spec 13.1). */
+  version: number
   level: LevelId
   topics: Topic[]
   importance: 'critical' | 'standard'
@@ -56,6 +58,8 @@ export interface PackMeta {
   id: string
   title: Record<string, string>
   edition: string
+  /** Set version, e.g. "2026-11-01.1" (spec 13.1). */
+  contentVersion: string
   validFrom?: string
   validTo?: string
   levels: LevelId[]

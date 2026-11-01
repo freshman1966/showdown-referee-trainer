@@ -5,6 +5,7 @@ export function makeQuestion(overrides: Partial<Question> = {}): Question {
   n++
   return {
     id: `T-${String(n).padStart(3, '0')}`,
+    version: 1,
     level: 'trainee',
     topics: ['serve'],
     importance: 'standard',

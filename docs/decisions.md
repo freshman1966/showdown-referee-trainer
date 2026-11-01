@@ -18,6 +18,7 @@
 | 2026-10-25 | No-fault scenarios | About 20–30 % of scenarios have "no decision, play continues" (or equivalent) as the correct answer |
 | 2026-10-25 | Design sprint | Visual design and screens are drafted on a design canvas before the hand-off to Claude Code. Draft: name "Call it.", font Atkinson Hyperlegible Next, light / dark / high-contrast themes (pending Stefan's choice) |
 | 2026-11-01 | Transparency | Controversial questions are allowed. Where the rule text does not decide a case alone, the question carries an `interpretation` text shown to the player: which rules apply, where the text is unclear, how referees decide |
+| 2026-11-01 | Review process | Referees comment per question via Google Form; one response sheet with tabs Responses / Questions / Review / Overview. Every comment refers to a question key (`N-024 v2`) and the set version (`contentVersion`). Review page "All questions" and comment links in preview builds only (spec 13) |
 
 ## Backlog
 

@@ -4,6 +4,7 @@ import { getPack, levelPool } from '../content'
 import type { Question } from '../content/types'
 import { formatRuleRefs, t, tNodes } from '../i18n'
 import { Badge } from '../components/Badge'
+import { CommentLink } from '../components/CommentLink'
 import { Layout, PageHeading, navLinks, usePageTitle } from '../components/Layout'
 import type { Answer } from '../game/run'
 import { correctCount, score } from '../game/run'
@@ -40,6 +41,7 @@ function AnswerItem({ question, answer, showStatus }: { question: Question; answ
       <p class="muted small">
         {formatRuleRefs(question.ruleRefs)} · {t('a11y.questionId', { id: question.id })}
       </p>
+      <CommentLink question={question} />
     </li>
   )
 }

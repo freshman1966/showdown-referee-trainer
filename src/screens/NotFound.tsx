@@ -5,7 +5,7 @@ import { href } from '../router'
 export function NotFound() {
   usePageTitle(t('errors.notFound'))
   return (
-    <Layout nav={[navLinks.settings(), navLinks.about()]}>
+    <Layout nav={[navLinks.settings(), ...navLinks.review(), navLinks.about()]}>
       <PageHeading>{t('errors.notFound')}</PageHeading>
       <p>
         <a class="text-link" href={href({ name: 'home' })}>

@@ -26,3 +26,11 @@
 - Write the validator (`npm run validate`) from section 6.4.
 - Build v1 as specified. All questions are `draft` until Stefan approves them. This is expected: develop with `CONTENT_MODE=preview` (spec 6.4). In production mode, levels without enough approved questions show "Coming soon".
 - New optional question field `interpretation` (spec 6.3, schema updated by Cowork): render it in the feedback panel below the explanation and in the result review list, using `feedback.interpretationHeading` / `feedback.interpretationLabel`. Add it to the translatable text fields in the validator and to the TypeScript types.
+- Review mode (spec section 13, preview builds only):
+  - versions: `version` per question and `contentVersion` in `pack.json` are in the content (schema updated by Cowork); show the set version in the preview footer.
+  - lock check: `question-lock.json`, `npm run content:lock`, validator check (13.1). Create the initial lock from the current content (all questions are v1).
+  - "All questions" page at `/review` (13.2) and "Comment on this question" links (13.3), configured by `content/review.json` (form URL still empty: links hidden until Cowork fills it).
+  - CSV export `npm run export:questions` (13.4).
+  - UI strings are in `ui.en.json` under `review`.
+- After that: run validate and tests, deploy a new preview.
+

@@ -125,6 +125,33 @@ describe('App', () => {
     await expectNoAxeViolations()
   })
 
+  it('lists all questions on the review page with filters and deep links', async () => {
+    render(<App store={createStore()} />)
+    expect(screen.getByText('Question set 2026-11-01.1')).toBeTruthy()
+    fireEvent.click(screen.getByRole('link', { name: 'All questions' }))
+    await screen.findByRole('heading', { level: 1, name: 'All questions' })
+    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(allQuestions.length)
+    expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Trainee', 'National', 'International'])
+    // Form URL is still empty in content/review.json, so no comment links yet.
+    expect(screen.queryByRole('link', { name: /Comment on this question/ })).toBeNull()
+    await expectNoAxeViolations()
+
+    const withInterpretation = allQuestions.filter((q) => q.interpretation)
+    fireEvent.click(screen.getByLabelText('Only questions with "How this answer is derived"'))
+    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(withInterpretation.length)
+    expect(screen.getAllByRole('heading', { level: 4, name: 'How this answer is derived' })).toHaveLength(withInterpretation.length)
+
+    fireEvent.change(screen.getByLabelText('Level'), { target: { value: 'national' } })
+    const national = withInterpretation.filter((q) => q.level === 'national')
+    expect(screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(national.map((q) => `${q.id} v${q.version}`))
+    expect(screen.getAllByText('Correct answer').length).toBeGreaterThanOrEqual(national.length)
+    await expectNoAxeViolations()
+
+    const target = national[national.length - 1]
+    await go(`#/review/${target.id}`)
+    await waitFor(() => expect(document.activeElement?.textContent).toBe(`${target.id} v${target.version}`))
+  })
+
   it('changes theme and timer from settings', async () => {
     render(<App store={createStore()} />)
     await go('#/settings')

@@ -1,6 +1,7 @@
 [
   {
     "id": "T-001",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "match-format"
@@ -47,6 +48,7 @@
   },
   {
     "id": "T-002",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "match-format",
@@ -93,6 +95,7 @@
   },
   {
     "id": "T-003",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "match-format"
@@ -140,6 +143,7 @@
   },
   {
     "id": "T-004",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "serve"
@@ -187,6 +191,7 @@
   },
   {
     "id": "T-005",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "serve"
@@ -233,6 +238,7 @@
   },
   {
     "id": "T-006",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "serve",
@@ -281,6 +287,7 @@
   },
   {
     "id": "T-007",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "serve"
@@ -327,6 +334,7 @@
   },
   {
     "id": "T-008",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "serve",
@@ -374,6 +382,7 @@
   },
   {
     "id": "T-009",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "faults"
@@ -420,6 +429,7 @@
   },
   {
     "id": "T-010",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "faults"
@@ -466,6 +476,7 @@
   },
   {
     "id": "T-011",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "faults"
@@ -511,6 +522,7 @@
   },
   {
     "id": "T-012",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "dead-ball"
@@ -557,6 +569,7 @@
   },
   {
     "id": "T-013",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "goal-area",
@@ -603,6 +616,7 @@
   },
   {
     "id": "T-014",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "time-outs"
@@ -649,6 +663,7 @@
   },
   {
     "id": "T-015",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "time-outs",
@@ -699,6 +714,7 @@
   },
   {
     "id": "T-016",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "warnings-penalties",
@@ -746,6 +762,7 @@
   },
   {
     "id": "T-017",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "warnings-penalties"
@@ -792,6 +809,7 @@
   },
   {
     "id": "T-018",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "warnings-penalties"
@@ -840,6 +858,7 @@
   },
   {
     "id": "T-019",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "change-sides",
@@ -889,6 +908,7 @@
   },
   {
     "id": "T-020",
+    "version": 1,
     "level": "trainee",
     "topics": [
       "signals"
@@ -935,6 +955,7 @@
   },
   {
     "id": "N-001",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -982,6 +1003,7 @@
   },
   {
     "id": "N-002",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1028,6 +1050,7 @@
   },
   {
     "id": "N-003",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1074,6 +1097,7 @@
   },
   {
     "id": "N-004",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties"
@@ -1120,6 +1144,7 @@
   },
   {
     "id": "N-005",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties",
@@ -1167,6 +1192,7 @@
   },
   {
     "id": "N-006",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1214,6 +1240,7 @@
   },
   {
     "id": "N-007",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties"
@@ -1269,6 +1296,7 @@
   },
   {
     "id": "N-008",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties",
@@ -1317,6 +1345,7 @@
   },
   {
     "id": "N-009",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties",
@@ -1364,6 +1393,7 @@
   },
   {
     "id": "N-010",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties"
@@ -1412,6 +1442,7 @@
   },
   {
     "id": "N-011",
+    "version": 1,
     "level": "national",
     "topics": [
       "warnings-penalties"
@@ -1460,6 +1491,7 @@
   },
   {
     "id": "N-012",
+    "version": 1,
     "level": "national",
     "topics": [
       "procedures"
@@ -1507,6 +1539,7 @@
   },
   {
     "id": "N-013",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1553,6 +1586,7 @@
   },
   {
     "id": "N-014",
+    "version": 1,
     "level": "national",
     "topics": [
       "goal-area"
@@ -1599,6 +1633,7 @@
   },
   {
     "id": "N-015",
+    "version": 1,
     "level": "national",
     "topics": [
       "goal-area",
@@ -1647,6 +1682,7 @@
   },
   {
     "id": "N-016",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1692,6 +1728,7 @@
   },
   {
     "id": "N-017",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1738,6 +1775,7 @@
   },
   {
     "id": "N-018",
+    "version": 1,
     "level": "national",
     "topics": [
       "serve"
@@ -1785,6 +1823,7 @@
   },
   {
     "id": "N-019",
+    "version": 1,
     "level": "national",
     "topics": [
       "serve"
@@ -1831,6 +1870,7 @@
   },
   {
     "id": "N-020",
+    "version": 1,
     "level": "national",
     "topics": [
       "procedures"
@@ -1876,6 +1916,7 @@
   },
   {
     "id": "N-021",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1922,6 +1963,7 @@
   },
   {
     "id": "N-022",
+    "version": 1,
     "level": "national",
     "topics": [
       "faults"
@@ -1969,6 +2011,7 @@
   },
   {
     "id": "N-023",
+    "version": 1,
     "level": "national",
     "topics": [
       "serve",
@@ -2016,6 +2059,7 @@
   },
   {
     "id": "N-024",
+    "version": 1,
     "level": "national",
     "topics": [
       "serve"
@@ -2063,6 +2107,7 @@
   },
   {
     "id": "I-001",
+    "version": 1,
     "level": "international",
     "topics": [
       "warnings-penalties",
@@ -2113,6 +2158,7 @@
   },
   {
     "id": "I-002",
+    "version": 1,
     "level": "international",
     "topics": [
       "warnings-penalties",
@@ -2160,6 +2206,7 @@
   },
   {
     "id": "I-003",
+    "version": 1,
     "level": "international",
     "topics": [
       "team-play",
@@ -2207,6 +2254,7 @@
   },
   {
     "id": "I-004",
+    "version": 1,
     "level": "international",
     "topics": [
       "team-play",
@@ -2254,6 +2302,7 @@
   },
   {
     "id": "I-005",
+    "version": 1,
     "level": "international",
     "topics": [
       "team-play",
@@ -2310,6 +2359,7 @@
   },
   {
     "id": "I-006",
+    "version": 1,
     "level": "international",
     "topics": [
       "team-play"
@@ -2365,6 +2415,7 @@
   },
   {
     "id": "I-007",
+    "version": 1,
     "level": "international",
     "topics": [
       "team-play"
@@ -2411,6 +2462,7 @@
   },
   {
     "id": "I-008",
+    "version": 1,
     "level": "international",
     "topics": [
       "equipment"
@@ -2463,6 +2515,7 @@
   },
   {
     "id": "I-009",
+    "version": 1,
     "level": "international",
     "topics": [
       "equipment"
@@ -2509,6 +2562,7 @@
   },
   {
     "id": "I-010",
+    "version": 1,
     "level": "international",
     "topics": [
       "faults",
@@ -2557,6 +2611,7 @@
   },
   {
     "id": "I-011",
+    "version": 1,
     "level": "international",
     "topics": [
       "equipment"
@@ -2603,6 +2658,7 @@
   },
   {
     "id": "I-012",
+    "version": 1,
     "level": "international",
     "topics": [
       "faults",
@@ -2649,6 +2705,7 @@
   },
   {
     "id": "I-013",
+    "version": 1,
     "level": "international",
     "topics": [
       "time-outs",
@@ -2697,6 +2754,7 @@
   },
   {
     "id": "I-014",
+    "version": 1,
     "level": "international",
     "topics": [
       "warnings-penalties",
@@ -2744,6 +2802,7 @@
   },
   {
     "id": "I-015",
+    "version": 1,
     "level": "international",
     "topics": [
       "procedures"
@@ -2789,6 +2848,7 @@
   },
   {
     "id": "I-016",
+    "version": 1,
     "level": "international",
     "topics": [
       "serve"
@@ -2834,6 +2894,7 @@
   },
   {
     "id": "I-017",
+    "version": 1,
     "level": "international",
     "topics": [
       "serve"
@@ -2879,6 +2940,7 @@
   },
   {
     "id": "I-018",
+    "version": 1,
     "level": "international",
     "topics": [
       "serve"
@@ -2924,6 +2986,7 @@
   },
   {
     "id": "I-019",
+    "version": 1,
     "level": "international",
     "topics": [
       "procedures",
@@ -2971,6 +3034,7 @@
   },
   {
     "id": "I-020",
+    "version": 1,
     "level": "international",
     "topics": [
       "match-format"

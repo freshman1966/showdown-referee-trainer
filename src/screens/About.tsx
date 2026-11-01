@@ -6,7 +6,7 @@ export function About() {
   usePageTitle(t('about.heading'))
   const meta = packs[0]?.meta
   return (
-    <Layout nav={[navLinks.home(), navLinks.settings()]}>
+    <Layout nav={[navLinks.home(), navLinks.settings(), ...navLinks.review()]}>
       <PageHeading>{t('about.heading')}</PageHeading>
       <p class="lead">{t('about.purpose')}</p>
 

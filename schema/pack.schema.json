@@ -4,7 +4,7 @@
   "title": "Question pack metadata",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "edition", "levels", "defaultLocale"],
+  "required": ["id", "title", "edition", "contentVersion", "levels", "defaultLocale"],
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
     "title": {
@@ -15,6 +15,7 @@
       "additionalProperties": { "type": "string", "minLength": 1 }
     },
     "edition": { "$ref": "#/$defs/edition" },
+    "contentVersion": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}\\.[0-9]+$", "description": "Set version: date of the content change plus a counter for that day, e.g. 2026-11-01.1." },
     "validFrom": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "First day the rule edition is valid (ISO date)." },
     "validTo": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "Last day the rule edition is valid (ISO date)." },
     "levels": {

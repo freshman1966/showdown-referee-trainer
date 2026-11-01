@@ -1,5 +1,6 @@
 import { useEffect } from 'preact/hooks'
 import type { ComponentChildren } from 'preact'
+import { packs } from 'virtual:content'
 import { t } from '../i18n'
 import { href, type Route } from '../router'
 
@@ -84,6 +85,7 @@ export function Layout({
       </main>
       <footer class="site-footer">
         <p>{t('app.disclaimer')}</p>
+        {__PREVIEW__ && packs.map((p) => <p key={p.meta.id}>{t('review.setVersion', { contentVersion: p.meta.contentVersion })}</p>)}
       </footer>
     </>
   )
@@ -93,5 +95,7 @@ export const navLinks = {
   home: (): NavLink => ({ route: { name: 'home' }, label: t('nav.home') }),
   settings: (): NavLink => ({ route: { name: 'settings' }, label: t('nav.settings') }),
   about: (): NavLink => ({ route: { name: 'about' }, label: t('nav.about') }),
+  /** "All questions" next to Settings; preview builds only (spec 13.2). Spread into the nav list. */
+  review: (): NavLink[] => (__PREVIEW__ ? [{ route: { name: 'review' }, label: t('review.navLink') }] : []),
   done: (): NavLink => ({ route: { name: 'home' }, label: t('nav.done') }),
 }

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'preact/hooks'
 import { PASS_MARK, STREAK_MIN, TIMER_WARNING_SECONDS } from '../config'
 import type { Question } from '../content/types'
 import { formatRuleRefs, t, tNodes } from '../i18n'
+import { CommentLink } from '../components/CommentLink'
 import { PageHeading, PreviewBanner, SkipLink, usePageTitle } from '../components/Layout'
 import { useAnnounce } from '../components/Announcer'
 import { isCorrect, score, streak, type Answer, type Run } from '../game/run'
@@ -219,6 +220,7 @@ function QuestionView({ run, index, onNext }: { run: Run; index: number; onNext:
             )}
             <p class="feedback__refs">{formatRuleRefs(question.ruleRefs)}</p>
             <p class="feedback__id">{t('a11y.questionId', { id: question.id })}</p>
+            <CommentLink question={question} />
             <div>
               <button type="button" class="button button--primary" onClick={onNext}>
                 {isLast ? t('feedback.finish') : t('feedback.next')}

@@ -205,5 +205,20 @@
     "correctAnnouncement": "Correct. Score: you {player}, Rulebook {rulebook}.",
     "incorrectAnnouncement": "Incorrect. Score: you {player}, Rulebook {rulebook}.",
     "levelLocked": "{level}, locked"
+  },
+  "review": {
+    "navLink": "All questions",
+    "heading": "All questions",
+    "intro": "All questions of this set, with the correct answers and explanations. Use \"Comment on this question\" to send feedback.",
+    "setVersion": "Question set {contentVersion}",
+    "questionKey": "{id} v{version}",
+    "correctLabel": "Correct answer",
+    "commentLink": "Comment on this question",
+    "commentLinkHint": "(opens Google Form in a new tab)",
+    "filterLevel": "Level",
+    "filterTopic": "Topic",
+    "filterAll": "All",
+    "filterInterpretation": "Only questions with \"How this answer is derived\"",
+    "noResults": "No questions match the filter."
   }
 }

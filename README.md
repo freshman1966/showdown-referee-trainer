@@ -16,7 +16,13 @@ npm run validate       # content checks (spec 6.4); add -- --mode=production|pre
 npm test               # unit, integration and axe-core tests, token contrast
 npm run build          # production build: approved questions only
 npm run build:preview  # preview build: all questions, preview banner
+npm run content:lock      # add hashes of new question keys to question-lock.json (spec 13.1)
+npm run export:questions  # exports/questions-<contentVersion>.csv for the review sheet (spec 13.4)
 ```
+
+When a player-visible field of a question changes (prompt, scenario, options, correct,
+explanation, interpretation, ruleRefs), increase its `version`, then run `npm run content:lock`.
+`npm run validate` fails if the text under an existing key changed.
 
 Content lives in `content/` and is checked against `schema/` on every build. A level with no
 approved questions is shown as "Coming soon" in production; a level with some but fewer than

@@ -4,7 +4,7 @@ import type { PackMeta } from '../content/types'
 import type { Run } from '../game/run'
 import { applyRun, emptyProgress, levelState, resetProgress } from './progress'
 
-const meta: PackMeta = { id: 'p', title: { en: 'P' }, edition: '2026-2028', levels: ['trainee', 'national', 'international'], defaultLocale: 'en' }
+const meta: PackMeta = { id: 'p', title: { en: 'P' }, edition: '2026-2028', contentVersion: '2026-11-01.1', levels: ['trainee', 'national', 'international'], defaultLocale: 'en' }
 const questions = Array.from({ length: 12 }, () => makeQuestion())
 
 function run(correctCount: number, kind: Run['kind'] = 'level'): Run {

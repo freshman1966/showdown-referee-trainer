@@ -58,7 +58,7 @@ export function Home() {
   const canPractice = practicePool(progress).length > 0
 
   return (
-    <Layout nav={[navLinks.settings(), navLinks.about()]} isHome>
+    <Layout nav={[navLinks.settings(), ...navLinks.review(), navLinks.about()]} isHome>
       <div class="stack">
         <PageHeading>{t('app.tagline')}</PageHeading>
         <p class="lead">{t('app.intro', { edition })}</p>

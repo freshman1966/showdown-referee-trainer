@@ -8,6 +8,7 @@ import { LevelStart, PracticeStart } from './screens/LevelStart'
 import { NotFound } from './screens/NotFound'
 import { Play } from './screens/Play'
 import { Result } from './screens/Result'
+import { Review } from './screens/Review'
 import { Settings } from './screens/Settings'
 import { AppProvider, useApp } from './state/app'
 import type { Store } from './state/storage'
@@ -30,6 +31,8 @@ function Screen({ route }: { route: Route }) {
       return <Settings />
     case 'about':
       return <About />
+    case 'review':
+      return __PREVIEW__ ? <Review questionId={route.questionId} /> : <NotFound />
     case 'notFound':
       return <NotFound />
   }
@@ -55,6 +58,8 @@ function Shell() {
       firstRender.current = false
       return
     }
+    // A deep link to one question on the review page moves focus to that question instead.
+    if (route.name === 'review' && route.questionId) return
     window.scrollTo(0, 0)
     document.getElementById('page-title')?.focus()
   }, [routeKey])

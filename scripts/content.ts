@@ -11,6 +11,8 @@ export interface RawPack {
   meta: unknown
   /** locale → parsed questions file */
   questions: Record<string, unknown>
+  /** question key → hash from question-lock.json (spec 13.1), if the file exists */
+  lock?: Record<string, string>
 }
 
 function readJson(path: string): unknown {
@@ -31,7 +33,13 @@ export function readRawPacks(contentDir = CONTENT_DIR): RawPack[] {
         if (match) questions[match[1]] = readJson(join(dir, file))
       }
       const metaPath = join(dir, 'pack.json')
-      return { dir, meta: existsSync(metaPath) ? readJson(metaPath) : undefined, questions }
+      const lockPath = join(dir, 'question-lock.json')
+      return {
+        dir,
+        meta: existsSync(metaPath) ? readJson(metaPath) : undefined,
+        questions,
+        lock: existsSync(lockPath) ? (readJson(lockPath) as Record<string, string>) : undefined,
+      }
     })
 }
 
@@ -43,6 +51,25 @@ export function readUiStrings(contentDir = CONTENT_DIR): Record<string, unknown>
     if (match) result[match[1]] = readJson(join(dir, file))
   }
   return result
+}
+
+export interface ReviewConfig {
+  enabled: boolean
+  formUrl: string
+  entryQuestionKey: string
+  entrySetVersion: string
+}
+
+/** content/review.json (spec 13.3), maintained by Cowork. */
+export function readReviewConfig(contentDir = CONTENT_DIR): unknown {
+  const path = join(contentDir, 'review.json')
+  return existsSync(path) ? readJson(path) : undefined
+}
+
+/** Comment-link settings for the browser: preview builds only, and only once the form URL is set. */
+export function shippedReviewConfig(mode: BuildMode, config: unknown): ReviewConfig | null {
+  const c = config as ReviewConfig | undefined
+  return mode === 'preview' && c?.enabled && c.formUrl ? c : null
 }
 
 /** Questions that ship in a build of the given mode. */

@@ -9,11 +9,12 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id", "level", "topics", "importance", "frequency", "type", "difficulty", "edition", "status",
+        "id", "version", "level", "topics", "importance", "frequency", "type", "difficulty", "edition", "status",
         "prompt", "scenario", "options", "correct", "fixedOrder", "explanation", "ruleRefs", "media", "requiresVision"
       ],
       "properties": {
         "id": { "type": "string", "pattern": "^[TNI]-[0-9]{3,}$" },
+        "version": { "type": "integer", "minimum": 1, "description": "Question version. Increases by 1 whenever a player-visible field changes." },
         "level": { "enum": ["trainee", "national", "international"] },
         "topics": {
           "type": "array",

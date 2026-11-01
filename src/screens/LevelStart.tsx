@@ -33,7 +33,7 @@ export function LevelStart({ packId, levelId }: { packId: string; levelId: strin
   const previous = pack.meta.levels[pack.meta.levels.indexOf(levelId) - 1]
 
   return (
-    <Layout nav={[navLinks.home(), navLinks.settings()]}>
+    <Layout nav={[navLinks.home(), navLinks.settings(), ...navLinks.review()]}>
       <div class="stack">
         <PageHeading>{t('levelStart.heading', { level: name })}</PageHeading>
         <p class="lead">{t(`levels.${levelId}.description`)}</p>
@@ -82,7 +82,7 @@ export function PracticeStart() {
   usePageTitle(t('practice.heading'))
   const available = practicePool(progress).length > 0
   return (
-    <Layout nav={[navLinks.home(), navLinks.settings()]}>
+    <Layout nav={[navLinks.home(), navLinks.settings(), ...navLinks.review()]}>
       <div class="stack">
         <PageHeading>{t('practice.heading')}</PageHeading>
         <p class="lead">{t('practice.intro')}</p>

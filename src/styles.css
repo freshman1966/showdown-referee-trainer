@@ -849,6 +849,10 @@ a {
   gap: var(--space-xs);
 }
 
+.comment-link {
+  font-size: var(--fs-min);
+}
+
 .feedback__refs {
   font-size: var(--fs-small);
   font-weight: 700;
@@ -858,6 +862,39 @@ a {
 .feedback__id {
   font-size: var(--fs-small);
   color: var(--muted);
+}
+
+/* Review */
+.review-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-l);
+}
+
+.review-filters__check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  min-height: var(--touch-min);
+}
+
+.review-filters__check input {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  scroll-margin-top: var(--space-l);
+}
+
+.review-options {
+  margin: 0;
+  padding-left: var(--space-l);
 }
 
 /* Result */
