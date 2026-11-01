@@ -1,6 +1,6 @@
 // Question export for the review sheet (spec 13.4). Run: npm run export:questions
 // Writes exports/questions-<contentVersion>.csv per pack: UTF-8, comma-separated, RFC 4180 quoting.
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { readRawPacks, readUiStrings } from './content.ts'
@@ -8,9 +8,9 @@ import { questionKey } from './lock.ts'
 import { validateContent } from './validate.ts'
 import type { PackMeta, Question } from '../src/content/types.ts'
 
-const EXPORT_DIR = join(import.meta.dirname, '..', 'exports')
+export const EXPORT_DIR = join(import.meta.dirname, '..', 'exports')
 
-const COLUMNS = [
+export const COLUMNS = [
   'key', 'id', 'version', 'setVersion', 'level', 'topics', 'status', 'scenario',
   'prompt', 'options', 'correct', 'explanation', 'interpretation', 'ruleRefs',
 ] as const
@@ -40,9 +40,13 @@ export function questionRow(q: Question, setVersion: string): string[] {
   return COLUMNS.map((c) => row[c])
 }
 
+export function csvLine(cells: readonly string[]): string {
+  return cells.map(cell).join(',')
+}
+
 export function questionsCsv(questions: Question[], setVersion: string): string {
   const lines = [COLUMNS as readonly string[], ...questions.map((q) => questionRow(q, setVersion))]
-  return lines.map((cells) => cells.map(cell).join(',')).join('\r\n') + '\r\n'
+  return lines.map(csvLine).join('\r\n') + '\r\n'
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -58,7 +62,14 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const meta = raw.meta as PackMeta
     const questions = raw.questions[meta.defaultLocale] as Question[]
     const file = join(EXPORT_DIR, `questions-${meta.contentVersion}.csv`)
-    writeFileSync(file, questionsCsv(questions, meta.contentVersion))
+    const csv = questionsCsv(questions, meta.contentVersion)
+    // Exports are history (spec 13.4): a set version, once exported, is never rewritten.
+    if (existsSync(file) && readFileSync(file, 'utf8') !== csv) {
+      console.error(`export:questions ${meta.id}: ${file} exists with different content; increase contentVersion in pack.json`)
+      process.exitCode = 1
+      continue
+    }
+    writeFileSync(file, csv)
     console.log(`export:questions ${meta.id}: ${questions.length} question(s) → ${file}`)
   }
 }

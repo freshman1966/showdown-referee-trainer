@@ -6,6 +6,7 @@ import Ajv2020 from 'ajv/dist/2020.js'
 import { resolveBuildMode, type BuildMode } from './build-mode.ts'
 import { readRawPacks, readReviewConfig, readUiStrings, isShipped, type RawPack, type ReviewConfig } from './content.ts'
 import { questionHash, questionKey } from './lock.ts'
+import { cumulativeForPacks } from './cumulative.ts'
 import { QUESTIONS_PER_RUN } from '../src/config.ts'
 import type { PackMeta, Question } from '../src/content/types.ts'
 
@@ -196,7 +197,11 @@ function parseMode(argv: string[]): BuildMode {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const mode = parseMode(process.argv.slice(2))
   const packs = readRawPacks()
-  const { errors, warnings } = validateContent(packs, readUiStrings(), mode)
+  const { errors, warnings } = validateContent(structuredClone(packs), readUiStrings(), mode)
+  // Exports feed /review/questions-all.csv in preview builds (spec 13.4).
+  const exportsCheck = cumulativeForPacks(packs)
+  errors.push(...exportsCheck.errors)
+  if (mode === 'preview') warnings.push(...exportsCheck.warnings)
   for (const w of warnings) console.warn(`warning: ${w}`)
   for (const e of errors) console.error(`error: ${e}`)
   const count = packs.flatMap((p) => Object.values(p.questions)).reduce<number>((n, l) => n + (Array.isArray(l) ? l.length : 0), 0)

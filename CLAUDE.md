@@ -33,4 +33,4 @@
   - CSV export `npm run export:questions` (13.4).
   - UI strings are in `ui.en.json` under `review`.
 - After that: run validate and tests, deploy a new preview.
-
+- Publish `/review/questions-all.csv` in every preview build (spec 13.4, "Cumulative file"): built from all `exports/*.csv`, one row per question key, append order, never reordered. Commit the `exports/` files. Comment links: `content/review.json` is now filled in.

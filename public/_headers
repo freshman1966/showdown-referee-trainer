@@ -6,3 +6,7 @@
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/review/questions-all.csv
+  Content-Type: text/csv; charset=utf-8
+  Cache-Control: no-cache

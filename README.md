@@ -20,6 +20,10 @@ npm run content:lock      # add hashes of new question keys to question-lock.jso
 npm run export:questions  # exports/questions-<contentVersion>.csv for the review sheet (spec 13.4)
 ```
 
+`exports/` is committed and never pruned: preview builds combine all files into
+`/review/questions-all.csv`, which the review sheet loads with `IMPORTDATA`. Export once per
+new `contentVersion`; the script refuses to rewrite an existing set version.
+
 When a player-visible field of a question changes (prompt, scenario, options, correct,
 explanation, interpretation, ruleRefs), increase its `version`, then run `npm run content:lock`.
 `npm run validate` fails if the text under an existing key changed.

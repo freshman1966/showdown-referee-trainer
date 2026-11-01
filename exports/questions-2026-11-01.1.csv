@@ -1,0 +1,270 @@
+key,id,version,setVersion,level,topics,status,scenario,prompt,options,correct,explanation,interpretation,ruleRefs
+T-001 v1,T-001,1,2026-11-01.1,trainee,match-format,draft,,"In individual play, when is a set won?","a) The first player to reach 11 points
+b) The first player to reach at least 11 points with a lead of 2 points
+c) The first player to reach at least 21 points with a lead of 2 points
+d) The first player to reach at least 15 points with a lead of 2 points",The first player to reach at least 11 points with a lead of 2 points,An individual set is won by the player who first reaches at least 11 points with a margin of 2 points. Team play uses 31 points with a 2-point margin.,,6; 8.3
+T-002 v1,T-002,1,2026-11-01.1,trainee,match-format; signals,draft,,How many points does a player receive for a goal?,"a) 1 point
+b) 2 points
+c) 3 points
+d) 1 point and the next serve",2 points,"When the ball fully enters the goal pocket, the referee blows a double whistle, calls ""Goal"" and awards 2 points to the scoring player.",,16.2.1
+T-003 v1,T-003,1,2026-11-01.1,trainee,match-format,draft,,Which of these is NOT a permitted number of sets for an individual match?,"a) 1 set
+b) Best of 3 sets
+c) Best of 4 sets
+d) Best of 5 sets",Best of 4 sets,"A match is played over an odd number of sets: 1, best of 3, or best of 5. The winner is the player who wins the majority of sets.",,6; 8.1; 8.2
+T-004 v1,T-004,1,2026-11-01.1,trainee,serve,draft,,"In individual play, how many consecutive serves does a player have before the serve passes to the opponent?","a) 1
+b) 2
+c) 3
+d) 5",2,A serve turn in individual play is 2 serves. In team play each player serves 3 times.,,6; 14.2; 23.2
+T-005 v1,T-005,1,2026-11-01.1,trainee,serve,draft,,"After the referee's whistle, how much time does the server have to serve?","a) 2 seconds
+b) 3 seconds
+c) 5 seconds
+d) No limit, as long as the player does not delay play",2 seconds,"The ball must be served within 2 seconds of the whistle. Serving later is an irregular serve and gives 1 point to the opponent. The server may reposition the ball after the whistle, but the 2 seconds still apply.",,6; 16.3.2
+T-006 v1,T-006,1,2026-11-01.1,trainee,serve; faults,draft,Player A serves. The ball bounces once off the sidewall and then passes over the centre board screen.,What is the decision?,"a) Re-serve
+b) 1 point to Player B, called as irregular serve or centre board
+c) 2 points to Player B
+d) No decision, play continues","1 point to Player B, called as irregular serve or centre board",A served ball that passes over the centre board screen does not complete the serve. The opponent receives 1 point.,"A served ball that passes over the centre board screen breaks two rules: 16.3.7 (the serve must pass under the centre board, call ""irregular serve"") and 16.4.1 (the ball passes over the centre board screen, call ""centre board""). Both give 1 point to the opponent. The rules do not say which call to announce, and referees use either call. The decision, 1 point to the opponent, is the same.",6; 16.3.7; 16.4.1
+T-007 v1,T-007,1,2026-11-01.1,trainee,serve,draft,Player A serves. The ball slides along the sidewall and then passes under the centre board screen.,What is the decision?,"a) Legal serve, play continues
+b) Re-serve
+c) 1 point to Player B
+d) Warning to Player A",1 point to Player B,A served ball must bounce off the sidewall exactly once before it passes under the centre board screen. A ball sliding along the wall counts as more than one bounce. This is an irregular serve: 1 point to the opponent.,,6; 16.3.7
+T-008 v1,T-008,1,2026-11-01.1,trainee,serve; faults,draft,"Player A serves. The ball bounces once off the sidewall, touches the bottom edge of the centre board screen and passes straight through to Player B's half.",What is the decision?,"a) Legal serve, play continues
+b) Re-serve
+c) 1 point to Player B for centre board
+d) 1 point to Player B for an irregular serve","Legal serve, play continues","After exactly one sidewall bounce, a served ball that touches the bottom of the centre board screen and passes directly to the other side is not a fault. The rules state this explicitly for the serve (16.3.7 b) and define this as ""forward motion"" (16.4.2 a).",,16.3.7; 16.4.2
+T-009 v1,T-009,1,2026-11-01.1,trainee,faults,draft,"During a rally, Player B drops the bat. The bat is not broken.",What is the decision?,"a) Re-serve
+b) 1 point to Player A
+c) 2 points to Player A
+d) Warning to Player B",1 point to Player A,Dropping the bat is a bat infraction: 1 point to the opponent. Only a broken bat leads to a stop and a re-serve.,,16.9.2; 16.9.3
+T-010 v1,T-010,1,2026-11-01.1,trainee,faults,draft,"During a rally, outside B's goal area, the ball touches Player B's hand protection on the batting hand, about 3 cm above the wrist joint.",What is the decision?,"a) 1 point to Player A for body touch
+b) No decision, play continues
+c) 1 point to Player A for invasion
+d) Re-serve","No decision, play continues","The batting hand is the hand up to and including 60 mm past the wrist joint, including the hand protection. Contact between the ball and the batting hand is allowed (outside the goal area). A body touch is contact with any other part of the body.",,6; 16.5.1
+T-011 v1,T-011,1,2026-11-01.1,trainee,faults,draft,"Outside B's goal area, Player B stops the ball with the bat and holds it still. The ball is silent for about 3 seconds before Player B plays it.",What is the decision?,"a) Dead ball, re-serve
+b) 1 point to Player A
+c) 2 points to Player A
+d) Warning to Player B",1 point to Player A,Trapping or stopping the ball so that it is inaudible for more than 2 seconds is a ball infraction: 1 point to the opponent. The referee judges the time; no stopwatch is used.,,16.10.1
+T-012 v1,T-012,1,2026-11-01.1,trainee,dead-ball,draft,"During a rally, Player B returns the ball weakly. The ball rolls very slowly and comes to rest near the middle of the table, out of reach of both players. No player has trapped it.",What is the decision?,"a) Dead ball, re-serve
+b) 1 point to the player who did not play the last shot
+c) Out, 1 point to the opponent of the last player to hit the ball
+d) The player who last hit the ball serves again","Dead ball, re-serve","Once the ball is in play, a ball that moves so slowly that it will not reach a point where a player can continue (17.1), or that is inaudible for more than 2 seconds (17.2), is a dead ball: the referee blows one whistle, calls ""Dead ball"" and orders a re-serve. If a player traps the ball, that is a ball infraction instead (16.10.1). A served ball that stops before passing under the centre board screen is not a dead ball but an irregular serve.",,17.1; 17.2
+T-013 v1,T-013,1,2026-11-01.1,trainee,goal-area; faults,draft,Player B touches the ball with the bat inside B's own goal area. The ball rolls back towards the centre of the table.,What is the decision?,"a) No decision, play continues
+b) 1 point to Player A for illegal defence
+c) 2 points to Player A
+d) Re-serve",1 point to Player A for illegal defence,"The bat and batting hand must not touch the ball in the goal area. If they do and the ball then stops or goes anywhere other than directly into the goal, it is illegal defence: 1 point to the opponent. If it goes directly into the goal, it is a goal (2 points).",,16.6.1
+T-014 v1,T-014,1,2026-11-01.1,trainee,time-outs,draft,,"In individual play, how many time-outs does each player have, and how long is one?","a) One per match, 60 seconds
+b) One per set, 60 seconds
+c) Two per set, 30 seconds each
+d) One per set, 90 seconds","One per set, 60 seconds",Each player has one time-out of 60 seconds per set. In team play each team has one 60-second time-out per match.,,18.2.1; 23.14
+T-015 v1,T-015,1,2026-11-01.1,trainee,time-outs; procedures,draft,,Which statements about a regular time-out are correct?,"a) The player may request it.
+b) The coach may request it.
+c) It may be requested while the ball is in play.
+d) The referee gives a ""15 seconds"" warning before it ends.","The player may request it.
+The coach may request it.
+The referee gives a ""15 seconds"" warning before it ends.","A time-out may be requested by the player or the coach, only during a break in play. A ""15 seconds"" warning is given before the time-out ends.",,18.2.2; 18.2.3; 18.2.4
+T-016 v1,T-016,1,2026-11-01.1,trainee,warnings-penalties; equipment,draft,"Player A has no previous warning. During play, Player A touches the mask without the referee's permission.",What is the decision?,"a) Warning to Player A
+b) 1 point to Player B
+c) 2-point penalty: 2 points to Player B
+d) Player A loses the match by default",2-point penalty: 2 points to Player B,"A player may touch the mask only between sets, during time-outs and during change of sides. At any other time, touching it without the referee's permission is penalised immediately with 2 points to the opponent. There is no warning first.",,11.3; 20.4.1
+T-017 v1,T-017,1,2026-11-01.1,trainee,warnings-penalties,draft,"Player B has no previous warning. During a rally, Player B shoves the table.",What is the decision?,"a) Warning to Player B
+b) 1 point to Player A
+c) 2-point penalty: 2 points to Player A
+d) No decision",Warning to Player B,"Shoving the table, or moving it excessively or constantly in a disturbing way, is one of the infractions listed in 20.3. The first such infraction in a match is a warning. Play stopped to give the warning resumes with a re-serve.",,20.1; 20.3.4
+T-018 v1,T-018,1,2026-11-01.1,trainee,warnings-penalties,draft,"In set 1, Player B received a warning for talking during play. In set 2, Player B scrapes the bat on the table in a disturbing way.",What is the decision?,"a) Warning to Player B, because it is a different infraction
+b) Warning to Player B, because warnings reset after each set
+c) 2-point penalty: 2 points to Player A
+d) 1 point to Player A",2-point penalty: 2 points to Player A,"Warnings are valid for the whole match. Any second infraction from the 20.3 list is penalised with 2 points to the opponent, even if it is a different type of infraction from the first.",,20.2; 20.3; 20.3.5; 20.3.6
+T-019 v1,T-019,1,2026-11-01.1,trainee,change-sides; procedures,draft,,"In the last set of a best-of-3 individual match, when do the players change sides?","a) They do not change sides in the last set
+b) When one player reaches 6 points
+c) When the total score reaches 11 points
+d) When one player reaches 5 points",When one player reaches 6 points,"Players change sides after each set. In a single-set match and in the last set of a match they also change when one player reaches 6 points (or after half of the stop-time, in a time-limited match). Change of sides lasts 60 seconds with a ""15 seconds"" warning.",,19.1; 19.2; 19.4; 19.5
+T-020 v1,T-020,1,2026-11-01.1,trainee,signals,draft,,Which whistle signal does the referee use for a goal?,"a) One short whistle
+b) Two short whistles (double whistle)
+c) One long whistle
+d) Three short whistles",Two short whistles (double whistle),"One whistle starts or stops play, a double whistle signals a goal, and a long whistle ends a set or the match.",,15.1; 16.2
+N-001 v1,N-001,1,2026-11-01.1,national,faults,draft,"During a rally, Player B holds the non-batting hand above the table, higher than the tops of the sidewalls. The hand does not touch the ball or the table.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player A for invasion
+c) 1 point to Player A for body touch
+d) Warning to Player B for holding the table","No decision, play continues","Invasion is holding the non-batting hand in the inner playing area. The inner playing area ends at an imaginary horizontal line at the height of the sidewall tops. A hand held above that line, even above the table, is not an invasion.",,1; 16.8.1; Appendix 6
+N-002 v1,N-002,1,2026-11-01.1,national,faults,draft,"During a rally, Player B rests the non-batting hand on the playing deck in B's own half. B is not switching the bat to the other hand. The ball does not touch the hand.",What is the decision?,"a) 1 point to Player A for invasion
+b) 1 point to Player A for body touch
+c) Warning to Player B
+d) No decision, play continues",1 point to Player A for invasion,The non-batting hand is inside the inner playing area (below the imaginary line at the height of the sidewall tops) and the player is not switching hands. This is an invasion: 1 point to the opponent. Ball contact is not required.,,16.8.1; Appendix 6
+N-003 v1,N-003,1,2026-11-01.1,national,faults,draft,"During a rally, Player B switches the bat from the right hand to the left hand. For a moment both hands hold the bat inside the inner playing area.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player A for invasion
+c) 1 point to Player A for bat infraction
+d) Re-serve","No decision, play continues","Switching the bat to the other hand is an explicit exception in both rules: the non-batting hand may enter the inner playing area while switching hands (16.8.1), and the bat may be held with both hands while switching (16.9.1).",,16.8.1; 16.9.1
+N-004 v1,N-004,1,2026-11-01.1,national,warnings-penalties,draft,"Player A has no previous warning. During a rally, Player A holds the outside of the curve at A's end of the table with the non-batting hand.",What is the decision?,"a) No decision, play continues
+b) Warning to Player A for holding the table
+c) 1 point to Player B for invasion
+d) 2-point penalty: 2 points to Player B","No decision, play continues","Holding the table with the non-batting hand is not allowed, except at the end of the table. The end of the table includes the whole curve. Holding the curve is therefore allowed.",,1; 20.3.2
+N-005 v1,N-005,1,2026-11-01.1,national,warnings-penalties; faults,draft,"Player A has no previous warning. During a rally, Player A holds the outside of the sidewall, about 30 cm from the curve, with the non-batting hand. The hand stays outside the table.",What is the decision?,"a) Warning to Player A for holding the table
+b) 1 point to Player B for invasion
+c) No decision, play continues
+d) 2-point penalty: 2 points to Player B",Warning to Player A for holding the table,"Holding any part of the table with the non-batting hand, other than the end of the table, is an infraction under 20.3.2. The hand is outside the inner playing area, so it is not an invasion. First infraction: warning.",,20.3.2; 20.3
+N-006 v1,N-006,1,2026-11-01.1,national,faults,draft,"During a rally, Player A wraps the fingers of the non-batting hand around the contact board at A's end, with the fingertips under its inner edge.",What is the decision?,"a) 1 point to Player B for invasion
+b) Warning to Player A for holding the table
+c) No decision, play continues
+d) 1 point to Player B for out",1 point to Player B for invasion,"Gripping the contact board with the non-batting hand is an invasion: 1 point to the opponent (16.8.2). The bottom of the contact board, which overhangs the inside of the table by 50 mm, is part of the inner playing area. The contact board is not part of the end of the table, where holding is allowed (20.3.2).",,1; 16.8.2; 20.3.2
+N-007 v1,N-007,1,2026-11-01.1,national,warnings-penalties,draft,,"Which infractions lead to an immediate 2-point penalty, without a warning first?","a) Touching the mask during a rally without the referee's permission
+b) The coach's mobile phone rings during the match
+c) The coach tries to give the player secret signs
+d) The player talks during play
+e) The player hooks the ball with a finger","Touching the mask during a rally without the referee's permission
+The coach's mobile phone rings during the match
+The coach tries to give the player secret signs","Rule 20.4 lists three infractions penalised immediately with 2 points: touching the mask at a non-permitted time without permission, noise from a phone or other device of the player or coach, and secret signs from the coach. Talking and hooking the ball are in the 20.3 list: warning first, penalty from the second infraction.",,20.3.3; 20.3.6; 20.4.1; 20.4.2; 20.4.3
+N-008 v1,N-008,1,2026-11-01.1,national,warnings-penalties; equipment,draft,"Player A requests a time-out and the referee grants it. During the time-out, Player A adjusts the mask without asking the referee.",What is the decision?,"a) No sanction
+b) Warning to Player A
+c) 2-point penalty: 2 points to Player B
+d) Warning, and the time-out ends immediately",No sanction,"A player may touch the mask between sets, during time-outs and during change of sides without asking. Permission is only needed at other times. Before play resumes, the referee checks that the mask is worn correctly.",,11.3; 11.4; 20.4.1
+N-009 v1,N-009,1,2026-11-01.1,national,warnings-penalties; procedures,draft,"During a rally, the mobile phone of Player B's coach rings. The referee stops play.",What is the decision?,"a) 2 points to Player A; play resumes with a re-serve
+b) Warning to Player B; play resumes with a re-serve
+c) 2 points to Player A; the rally is played to the end first
+d) The coach is sent out; no points awarded",2 points to Player A; play resumes with a re-serve,"Noise from a mobile phone or other device of the player or their coach is penalised immediately with 2 points to the opponent. When the referee stops play to give a penalty, play resumes with a re-serve.",,20.1; 20.4.2
+N-010 v1,N-010,1,2026-11-01.1,national,warnings-penalties,draft,"Player A has no previous warning. During a rally, Player A steps to the side of the table to reach the ball. One foot is now next to the sidewall, about 60 cm in front of A's end wall. The other foot is still behind the end of the table.",What is the decision?,"a) Warning to Player A for playing outside the position area
+b) No decision, play continues
+c) 1 point to Player B
+d) 2-point penalty: 2 points to Player B",Warning to Player A for playing outside the position area,"The front boundary of the player position area is an imaginary line across the table where the curves end and the straight sidewalls begin, about 23 cm from the inside of the end wall (curve radius 230 mm), extended sideways without limit. With one foot beside the sidewall beyond this line, Player A is playing outside the position area. First infraction: warning.","Rule 5.1 defines the position area but does not say which part of the player decides. Referees judge by the feet: a player with at least one foot beside the sidewall, beyond the line where the curves end, is outside the position area. Leaning the upper body does not count.",1; 5.1; 20.3.1; Appendix 5
+N-011 v1,N-011,1,2026-11-01.1,national,warnings-penalties,draft,"During a rally, Player A stands behind A's end of the table, close to the curve. To reach a ball running along the sidewall, A leans forward and to the side and plays the ball with the bat. Both feet stay behind the end of the table.",What is the decision?,"a) No decision, play continues
+b) Warning to Player A for playing outside the position area
+c) 1 point to Player B for invasion
+d) Warning to Player A for not having at least one foot on the ground","No decision, play continues","Both feet are behind the end of the table, inside the player position area. Leaning the upper body forward and to the side does not take the player out of the position area.","Rule 5.1 defines the position area but does not say which part of the player decides. Referees judge by the feet: a player with at least one foot beside the sidewall, beyond the line where the curves end, is outside the position area. Leaning the upper body does not count.",1; 5.1; 20.3.1; Appendix 5
+N-012 v1,N-012,1,2026-11-01.1,national,procedures,draft,,Where may a coach stand during play?,"a) On the side of the table opposite the first referee, alongside their player's half, up to 2 m from the sidewall
+b) On the same side as the first referee, next to the centre board screen
+c) Behind their player, inside the player position area
+d) Anywhere in the room, as long as the coach is silent","On the side of the table opposite the first referee, alongside their player's half, up to 2 m from the sidewall","The coaches' standing area is on the side of the table opposite the first referee. It runs along the table from the point where the curve meets the sidewall to the centre board screen, up to 2 m from the sidewall. The coach must stay on their player's side of the table. In exceptional cases the referee may designate another area.",,5.2; 11.8; Appendix 5
+N-013 v1,N-013,1,2026-11-01.1,national,faults,draft,"During a rally, Player B leans the upper body far forward over B's end of the table. B's non-batting hand stays above the height of the sidewall tops, and both feet stay on the floor behind B's end of the table. The ball does not touch B's body.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player A for invasion
+c) 1 point to Player A for body touch
+d) Warning to Player B","No decision, play continues",Leaning the upper body into the playing area is allowed. Only if the ball touches the body (other than the bat or batting hand) is it a body touch.,,16.8 (note); 16.5.1
+N-014 v1,N-014,1,2026-11-01.1,national,goal-area,draft,"Player A shoots. Player B's bat touches the ball inside B's goal area, and the ball goes directly into B's goal.",What is the decision?,"a) Goal: 2 points to Player A
+b) 1 point to Player A for illegal defence
+c) 1 point to Player A for illegal defence, plus a warning
+d) Re-serve",Goal: 2 points to Player A,"If the bat or batting hand touches the ball inside the goal area and the ball moves directly into the goal, it is a goal: 2 points to the opponent.",,16.6.1; 16.2.1
+N-015 v1,N-015,1,2026-11-01.1,national,goal-area; faults,draft,"Player B's bat touches the ball inside B's goal area. The ball then bounces against B's batting arm, about 15 cm above the wrist, and rolls back onto the table.",What is the decision?,"a) 1 point to Player A for body touch
+b) 1 point to Player A for illegal defence
+c) 2 points to Player A
+d) 1 point to Player A for illegal defence and 1 point for body touch",1 point to Player A for body touch,"If the ball touches the bat or batting hand in the goal area and then touches another part of the body, the call is body touch, not illegal defence: 1 point to the opponent. The batting hand ends 60 mm above the wrist joint, so the arm 15 cm above the wrist is another part of the body. Only one playing mistake is called.",,6; 16.6.1; 16.5.1
+N-016 v1,N-016,1,2026-11-01.1,national,faults,draft,"Player B hits the ball hard. It jumps up, hits a ceiling lamp and falls back onto the table.",What is the decision?,"a) 1 point to Player A for out
+b) Dead ball, re-serve
+c) No decision, play continues
+d) Let, re-serve",1 point to Player A for out,"If the ball hits the ceiling or any other object that is not part of the table or a player's batting hand, it is out: 1 point to the opponent of the player who hit it.",,16.7.3
+N-017 v1,N-017,1,2026-11-01.1,national,faults,draft,Player A hits the ball. It jumps and lands on the top of the contact board at B's end before rolling back onto the table.,What is the decision?,"a) 1 point to Player B for out
+b) No decision, play continues
+c) 1 point to Player B for invasion
+d) Re-serve",1 point to Player B for out,The top of the contact board is not part of the playing area. A hit ball that touches the top of the contact board is out: 1 point to the opponent.,,1; 16.7.2
+N-018 v1,N-018,1,2026-11-01.1,national,serve,draft,Player A serves but does not hit the ball properly; it barely moves. A swings again and hits the ball a second time towards the sidewall.,What is the decision?,"a) Irregular serve: 1 point to Player B
+b) No decision, play continues, because both touches were within 2 seconds
+c) Re-serve
+d) Warning to Player A for delaying the game",Irregular serve: 1 point to Player B,"Touching the ball with the bat more than once when serving is an irregular serve: 1 point to the opponent. A second attempt after a poor first contact is not allowed, even within the 2 seconds. (Only a complete miss without any audible sound allows another swing.)","Rule 16.3.1 calls touching the ball with the bat more than once on the serve an irregular serve. Its sub-rule a) says each touch counts as 1 serve; this wording is unclear about the serve count. Referees apply the main rule: a second touch after a poor first contact is an irregular serve, 1 point to the opponent.",16.3; 16.3.1; 16.3.6
+N-019 v1,N-019,1,2026-11-01.1,national,serve,draft,Player A serves and misses the ball. The referee hears the bat hit the playing deck.,What is the decision?,"a) Irregular serve: 1 point to Player B; the swing counts as a serve
+b) No decision, play continues
+c) Player A may swing again within the 2 seconds
+d) Re-serve",Irregular serve: 1 point to Player B; the swing counts as a serve,"If the server misses the ball and the referee hears a sound, the swing counts as one serve. Missing the ball is listed under irregular serve: 1 point to the opponent. Without any audible sound, the player may swing again until the 2 seconds have passed.","Rule 16.3.6 b) only says that the swing ""counts as one service"". Rule 16.3.6 is listed under 16.3, irregular serve, which awards 1 point to the opponent. The swing is therefore called as an irregular serve.",16.3; 16.3.6
+N-020 v1,N-020,1,2026-11-01.1,national,procedures,draft,,In which order does the referee start play at the beginning of a set?,"a) Roll the ball to the server, announce the serve number, announce the score, ask the returner if ready, ask the server if ready, one whistle
+b) Roll the ball to the server, announce the score, announce the serve number, ask the server if ready, ask the returner if ready, one whistle
+c) Announce the score, roll the ball to the server, ask both players together, one whistle
+d) Roll the ball to the server, ask the returner if ready, ask the server if ready, announce the serve number and the score, one whistle","Roll the ball to the server, announce the serve number, announce the score, ask the returner if ready, ask the server if ready, one whistle","The referee rolls the ball to the serving player and announces first the serve number, then the score, both referred to the server. Then the referee asks first the returner and then the server if they are ready. After both say ""yes"", the referee whistles once. The same procedure is used at the start of the match, each set, after time-outs, change of sides and unusually long breaks.",,15.2
+N-021 v1,N-021,1,2026-11-01.1,national,faults,draft,"During a rally, Player A rests the non-batting hand on top of the contact board at A's end. One finger touches the front of the contact board. No finger is under the contact board.",What is the decision?,"a) 1 point to Player B for invasion
+b) No decision, play continues
+c) Warning to Player A for holding the table
+d) 1 point to Player B for out",1 point to Player B for invasion,"The front of the contact board is part of the playing area. A finger of the non-batting hand on the front of the contact board is an invasion: 1 point to the opponent. The hand may rest on top of the contact board, because the top is not part of the playing area.","Section 1 lists the front of the contact board as part of the playing area. It does not list the front as part of the inner playing area, which rule 16.8.1 refers to. The 2022–2025 rules excluded the front from the inner playing area explicitly. Referees call a finger of the non-batting hand on the front of the contact board an invasion.",1; 16.8
+N-022 v1,N-022,1,2026-11-01.1,national,faults,draft,"During a rally, Player A rests the non-batting hand flat on top of the contact board at A's end. No finger touches the front of the contact board or reaches under it.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player B for invasion
+c) Warning to Player A for holding the table
+d) 1 point to Player B for out","No decision, play continues","The top of the contact board is not part of the playing area. A non-batting hand resting on top of the contact board, without touching its front or reaching under it, is allowed.","The contact board is part of the table, but not part of the end of the table (section 1), where holding is allowed (20.3.2). Read literally, resting a hand on it could be ""holding on to part of the table"". Referees treat a hand that only rests flat on top of the contact board, without gripping it or touching its front, as neither holding (20.3.2) nor invasion (16.8).",1; 16.8; 20.3.2
+N-023 v1,N-023,1,2026-11-01.1,national,serve; dead-ball,draft,"Player A serves too softly. The ball bounces once off the sidewall, rolls slowly and stops in A's half before it reaches the centre board screen.",What is the decision?,"a) Irregular serve: 1 point to Player B
+b) Dead ball, re-serve
+c) Let, re-serve
+d) 1 point to Player B for centre board",Irregular serve: 1 point to Player B,A served ball that stops before the centre board screen has not completed the serve. It is called as an irregular serve: 1 point to the opponent. A dead ball is only called once the ball is in play.,"No rule names this case directly. Rule 16.3.7 is written about the number of sidewall bounces before the ball passes under the centre board. The definition of ""Serve"" (rule 6) makes passing under the centre board part of a valid serve. A ball that stops before the centre board has not completed a valid serve, so it is not yet in play and cannot be a dead ball. Rule 17.1 (dead ball) does not say this explicitly. Referees call this case as an irregular serve.",6; 16.3.7
+N-024 v1,N-024,1,2026-11-01.1,national,serve,draft,"Player A serves. The ball bounces once off the sidewall, hits the centre board screen and stops. It does not pass to Player B's half.",What is the decision?,"a) Irregular serve: 1 point to Player B
+b) Centre board: 1 point to Player B
+c) Dead ball, re-serve
+d) Let, re-serve",Irregular serve: 1 point to Player B,"A served ball must bounce off the sidewall exactly once and then pass under the centre board screen. A ball that hits the screen and stops has not completed the serve. The call is ""irregular serve"": 1 point to the opponent.","Two rules describe this case. Rule 16.4.2 says a ball that hits the centre board screen and stops its forward motion is a ""centre board"" fault. Rule 16.3.7 says a served ball must pass under the centre board, otherwise it is an ""irregular serve"". Both give 1 point to the opponent. The rules do not say which call applies on the serve. Referees call ""irregular serve"", because the serve was not completed.",6; 16.3.7; 16.4.2
+I-001 v1,I-001,1,2026-11-01.1,international,warnings-penalties; equipment,draft,"Player A has no previous warning. Set 1 has just ended. Before changing sides, Player A lifts the mask to wipe the eyes. A has not asked for permission.",What is the decision?,"a) Warning to Player A
+b) No sanction, touching the mask between sets is allowed
+c) 2-point penalty: the next set starts 2:0 for Player B
+d) 2-point penalty: 2 points are added to Player B's score in the finished set",Warning to Player A,"Between sets, a player may touch the mask without permission, but only after changing sides. Touching it before changing sides breaks this condition. The case is sanctioned with a warning. Because the warning is given before the next set begins, that set starts with the warning on record. A second infraction of this kind, or any other infraction from the 20.3 list, would be a 2-point penalty.","Rule 11.3 allows touching the mask between sets; 11.3 a) adds that between sets the player may do so ""only after he/she has changed the side"". The penalty without warning in 20.4.1 covers touching the mask ""when not between sets, during time-outs or a change of sides"", so it does not cover this case. No rule names a sanction for touching the mask between sets before changing sides. Referees treat it as a disturbing activity under 20.3.9: a warning for the first infraction.",11.3; 20.1; 20.3; 20.3.9; 20.4.1
+I-002 v1,I-002,1,2026-11-01.1,international,warnings-penalties; procedures,draft,"International tournament (official language English). After a goal, Player A's coach cheers to the player in their own national language.",What is the decision?,"a) 2 points to Player B and the coach is sent out of the playing room
+b) No decision, play continues
+c) Warning to the coach
+d) Warning to Player A",2 points to Player B and the coach is sent out of the playing room,"When the ball is not in play, a coach may cheer only in the official languages of the tournament. An infraction is treated under 20.4.3: immediate 2-point penalty, serious misconduct, and the referee sends the coach out of the playing room.",,11.7; 20.4.3
+I-003 v1,I-003,1,2026-11-01.1,international,team-play; warnings-penalties,draft,"Team match. Player A1 received a warning for talking during play. Later, player A3 scrapes the bat on the table in a disturbing way.",What is the decision?,"a) 2-point penalty: 2 points to Team B
+b) Warning to player A3
+c) Warning to Team A
+d) No decision, play continues",2-point penalty: 2 points to Team B,"In team play, warnings are valid for the whole match and for the whole team. A second infraction from the 20.3 list by any player of the same team is penalised with 2 points to the opponent.",,20.3; 23.15
+I-004 v1,I-004,1,2026-11-01.1,international,team-play; serve,draft,,"Team match. A1 served 3 times against B1. Then B1 served 3 times against A2. Who serves next, against whom?","a) A2 serves against B2
+b) A2 serves against B1
+c) A3 serves against B2
+d) B2 serves against A2",A2 serves against B2,"After serving 3 times a player leaves the table. B1 leaves after serving, A2 stays and serves 3 times against B2. The order continues: B2 against A3, A3 against B3, B3 against A1, A1 against B1.",,23.2; 24
+I-005 v1,I-005,1,2026-11-01.1,international,team-play; change-sides; time-outs,draft,,Which statements about a team match are correct?,"a) Teams change sides when one team reaches 16 points
+b) Each team has one 60-second time-out per match
+c) The match is won by the first team to reach at least 31 points with a lead of 2 points
+d) Each team has one 60-second time-out per 11 points scored
+e) Teams change sides only if the score is level at 15:15","Teams change sides when one team reaches 16 points
+Each team has one 60-second time-out per match
+The match is won by the first team to reach at least 31 points with a lead of 2 points",A team match is one set to 31 points with a 2-point margin. Teams change sides when one team reaches 16. Each team has one time-out of 60 seconds per match.,,6; 23.1; 23.13; 23.14
+I-006 v1,I-006,1,2026-11-01.1,international,team-play,draft,,Which statements about substitutions in a team match are correct?,"a) Each team may make one substitution per match
+b) The coach or the captain requests it during a break in play
+c) If the player at the table is substituted, the new player continues with that player's serves or returns
+d) The substituted player may return later in the same match
+e) A substitution may be made while the ball is in play if the player is injured","Each team may make one substitution per match
+The coach or the captain requests it during a break in play
+If the player at the table is substituted, the new player continues with that player's serves or returns","Each team has one substitution per match, requested by the coach or captain during a break in play. 30 seconds are allowed. A player substituted at the table is replaced in the current serve or return sequence. The substituted player may not play again in that match.",,23.8; 23.8.1; 23.8.2; 23.8.4; 23.8.5
+I-007 v1,I-007,1,2026-11-01.1,international,team-play,draft,Team A plays with two female players and one male player. The coach requests to substitute the male player with a female substitute.,What is the decision?,"a) The substitution is not allowed
+b) The substitution is allowed
+c) Allowed, but the team gets a warning
+d) Allowed only for medical reasons",The substitution is not allowed,"The line-up must be mixed: at least one male and one female player. After a substitution, the team must still be mixed. Replacing the only male player with a female player breaks this rule.",,22.2; 23.8.3
+I-008 v1,I-008,1,2026-11-01.1,international,equipment,draft,,"During the equipment check, which bats must the referee reject?","a) Total length 310 mm
+b) Plastic blade without any soft cover
+c) Blade width 75 mm
+d) Handle diameter 38 mm
+e) Wooden blade 6 mm thick with a 2 mm soft cover on each side","Total length 310 mm
+Plastic blade without any soft cover","Maximum total length is 300 mm. Blades with a non-wooden surface must be covered with soft material. Blade width up to 75 mm, handle diameter up to 40 mm and a total blade thickness of 10 mm including soft cover are allowed.",,3; 10.2; Appendix 2
+I-009 v1,I-009,1,2026-11-01.1,international,equipment,draft,Equipment check. At the knuckles the bare hand measures 85 mm wide and 25 mm thick. With the glove it measures 130 mm wide and 45 mm thick.,What is the decision?,"a) Reject: the width difference is more than 40 mm
+b) Approve: the thickness difference is within 25 mm
+c) Approve: only the thickness is measured
+d) Reject: the glove may not be wider than the hand at all",Reject: the width difference is more than 40 mm,"Gloves are measured at the wrist, the knuckles and the middle joint of the fingers, first the bare hand, then the gloved hand. The gloved hand may be at most 40 mm wider (20 mm on each side) and at most 25 mm thicker. 45 mm wider exceeds the limit, so the glove is rejected.",,4.3; Appendix 3
+I-010 v1,I-010,1,2026-11-01.1,international,faults; equipment,draft,"During a rally, the ball touches the sweatband on Player B's batting arm, about 10 cm above the wrist joint.",What is the decision?,"a) 1 point to Player A for body touch
+b) No decision, play continues
+c) 1 point to Player A for invasion
+d) Re-serve",1 point to Player A for body touch,"The batting hand is the hand up to and including 60 mm past the wrist joint, including hand protection. Arm protection beyond that, such as a sweatband, is not part of the batting hand. Ball contact there is a body touch.",,4.3; 6; 16.5.1
+I-011 v1,I-011,1,2026-11-01.1,international,equipment,draft,Equipment check before the match. Player A wears a soft sleep mask. The referee sees no light through it.,What is the decision?,"a) The mask is not allowed; the player must use a compliant mask
+b) Allowed, because no light gets through
+c) Allowed, if the referee tapes the edges
+d) Allowed in national tournaments only",The mask is not allowed; the player must use a compliant mask,"Only darkened alpine ski goggles or adequate alternatives such as goalball masks are allowed. The mask must be semi-rigid or rigid. Sleep masks are explicitly prohibited, even if they block all light. Players who medically cannot wear a standard mask must wear occlusive eye patches.",,4.1; 10.2
+I-012 v1,I-012,1,2026-11-01.1,international,faults; procedures,draft,Player B hits the ball and the blade of B's bat breaks off. The ball continues and goes into Player A's goal before the referee whistles.,What is the decision?,"a) No goal; after the bat is replaced, play resumes with a re-serve
+b) Goal: 2 points to Player B
+c) 1 point to Player A for bat infraction
+d) Goal counts, then the bat is replaced","No goal; after the bat is replaced, play resumes with a re-serve","When a bat breaks, play cannot continue. Points scored after the bat broke do not count, even if the referee has not yet whistled. After the bat is replaced, play resumes with a re-serve.",,16.9.3
+I-013 v1,I-013,1,2026-11-01.1,international,time-outs; match-format,draft,The referee calls a medical time-out for Player A. After 5 minutes Player A is not ready to play.,What is the decision?,"a) Player A gives up the match: A keeps the points already won and loses with the lowest possible result
+b) Player A loses by default: all of A's points are annulled
+c) The match is suspended and continued later
+d) Player A gets a second medical time-out",Player A gives up the match: A keeps the points already won and loses with the lowest possible result,"After a medical time-out, the player must be ready within 5 minutes; otherwise the player gives up the match. In contrast, a player who does not return within 5 minutes from a toilet visit loses by default.",,6; 18.3.2; 18.4.2
+I-014 v1,I-014,1,2026-11-01.1,international,warnings-penalties; match-format,draft,"Best of 3 sets. Player A won set 1 11-8. In set 2, at 5-5, Player A throws the bat after a disputed call.",What is the result of the match?,"a) Player B wins 11-0, 11-0
+b) Player B wins 8-11, 11-5, 11-0
+c) Player B wins 8-11, 11-5
+d) Player B wins 11-0, 11-5","Player B wins 11-0, 11-0",Throwing the bat is very serious misconduct: the player loses the match by default. A player who loses by default loses all sets without any scored points; points and sets already won are annulled.,,6; 20.5.1
+I-015 v1,I-015,1,2026-11-01.1,international,procedures,draft,The match is scheduled for 10:00. The previous match on the same table ends at 10:12; a referee is present. Player A arrives at 10:15.,What is the decision?,"a) The match is played normally
+b) Player A loses by default
+c) Warning to Player A for lateness
+d) 2-point penalty: the match starts 2:0 for Player B",The match is played normally,"A player who is more than 5 minutes late loses by default. The 5-minute count starts when at least one referee is present and, in case of delay, the table is free. Player A arrived 3 minutes after the table became free.",,20.5.3
+I-016 v1,I-016,1,2026-11-01.1,international,serve,draft,"Player A places the ball on the playing deck and lets go. Because the table is slightly uneven, the ball rolls a few centimetres by itself. A hits it within 2 seconds of the whistle and the serve bounces once off the sidewall before passing under the centre board screen.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player B for irregular serve
+c) Re-serve
+d) Warning to Player A","No decision, play continues","After the ball has been placed and released, it may roll before it is hit, as long as the player does not move it on purpose (for example because the table is not completely even). Only intentional rolling is an irregular serve.",,16.3.5
+I-017 v1,I-017,1,2026-11-01.1,international,serve,draft,"After the whistle, Player A moves the ball to a different position on the playing deck and serves 1.5 seconds after the whistle. The ball bounces once off the sidewall and passes under the centre board screen.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player B for irregular serve
+c) Re-serve
+d) Warning to Player A for delaying the game","No decision, play continues",The server may move the ball to a different position on the playing surface even after the whistle. The serve must still be made within 2 seconds of the whistle.,,16.3.2
+I-018 v1,I-018,1,2026-11-01.1,international,serve,draft,"Player A swings at the ball and misses it without any audible sound. Within the 2 seconds A swings again and serves correctly: one sidewall bounce, then under the centre board screen.",What is the decision?,"a) No decision, play continues
+b) 1 point to Player B for irregular serve
+c) The first swing counts as the 1st serve
+d) Re-serve","No decision, play continues","If the server misses the ball and the referee hears no sound, the player may swing again until the 2-second limit is reached. A legal hit within the 2 seconds is a valid serve.",,16.3.6
+I-019 v1,I-019,1,2026-11-01.1,international,procedures; serve,draft,,Player A wins the coin toss and chooses the starting side of the table. Who serves first in set 1 and in set 2?,"a) Set 1: Player B, set 2: Player A
+b) Set 1: Player A, set 2: Player B
+c) Set 1: Player B, set 2: Player B
+d) A second coin toss decides the serve","Set 1: Player B, set 2: Player A","The coin-toss winner chooses either to take the serve or to choose the starting side. If the winner chooses the side, the opponent serves first. The first serve alternates between sets.",,12.1; 14.1
+I-020 v1,I-020,1,2026-11-01.1,international,match-format,draft,National tournament with time-limited matches. Time expires in the deciding set at 9-9.,What is the decision?,"a) A coin toss decides who serves; the next point wins
+b) Player A wins, because A scored last
+c) An extra 2 minutes are played
+d) The match continues until one player reaches 11",A coin toss decides who serves; the next point wins,"Time-limited matches are not allowed at IBSA Sanctioned Events, but other organisers may use them. When time expires with a draw, a coin toss decides who serves, and the next point wins.",,9.1; 9.2; 9.3

@@ -307,4 +307,7 @@ Referees review the questions in the preview build and comment through a Google 
 | interpretation | text or empty |
 | ruleRefs | `6; 16.3.7; 16.4.2` |
 
-Cowork imports new rows into the "Questions" tab of the review sheet. Existing rows are never changed, so every comment can be shown next to the exact question text it refers to.
+The review sheet loads all question versions from the cumulative file below. Existing rows are never changed, so every comment can be shown next to the exact question text it refers to.
+
+**Cumulative file for the review sheet.** Every preview build publishes `/review/questions-all.csv` (same columns as above). It contains every question version from all files in `exports/`, one row per question key, never removed. Row order: by first appearance (older set versions first, within a set in file order). New question versions are appended at the end; existing rows keep their position, because the review sheet's Overview tab adds manual columns (Status, Decision) row by row. The `exports/` files are committed to the repository and never deleted. The review sheet loads the file with `IMPORTDATA`.
+

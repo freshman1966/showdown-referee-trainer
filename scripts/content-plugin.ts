@@ -1,6 +1,7 @@
 import type { Plugin } from 'vite'
 import type { BuildMode } from './build-mode.ts'
 import { buildPacks, readRawPacks, readReviewConfig, readUiStrings, shippedReviewConfig, CONTENT_DIR } from './content.ts'
+import { CUMULATIVE_PATH, cumulativeForPacks } from './cumulative.ts'
 import { validateContent } from './validate.ts'
 
 const ID = 'virtual:content'
@@ -24,7 +25,19 @@ export function contentPlugin(mode: BuildMode): Plugin {
         `export const review = ${JSON.stringify(review && { formUrl: review.formUrl, entryQuestionKey: review.entryQuestionKey, entrySetVersion: review.entrySetVersion })}`,
       ].join('\n')
     },
+    generateBundle() {
+      // Review sheet source (spec 13.4): preview builds only.
+      if (mode !== 'preview') return
+      const { csv, errors, warnings } = cumulativeForPacks(readRawPacks())
+      for (const w of warnings) this.warn(w)
+      if (errors.length > 0) this.error(`Export check failed:\n${errors.join('\n')}`)
+      this.emitFile({ type: 'asset', fileName: CUMULATIVE_PATH, source: csv })
+    },
     configureServer(server) {
+      server.middlewares.use(`/${CUMULATIVE_PATH}`, (_req, res) => {
+        res.setHeader('Content-Type', 'text/csv; charset=utf-8')
+        res.end(cumulativeForPacks(readRawPacks()).csv)
+      })
       server.watcher.add(CONTENT_DIR)
       server.watcher.on('change', (file) => {
         if (!file.startsWith(CONTENT_DIR) || !(file.includes('/packs/') || file.endsWith('review.json'))) return

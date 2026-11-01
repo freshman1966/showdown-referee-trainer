@@ -132,8 +132,8 @@ describe('App', () => {
     await screen.findByRole('heading', { level: 1, name: 'All questions' })
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(allQuestions.length)
     expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Trainee', 'National', 'International'])
-    // Form URL is still empty in content/review.json, so no comment links yet.
-    expect(screen.queryByRole('link', { name: /Comment on this question/ })).toBeNull()
+    // content/review.json has a form URL: one comment link per question.
+    expect(screen.getAllByRole('link', { name: 'Comment on this question (opens Google Form in a new tab)' })).toHaveLength(allQuestions.length)
     await expectNoAxeViolations()
 
     const withInterpretation = allQuestions.filter((q) => q.interpretation)
