@@ -44,6 +44,8 @@ export interface Question {
   correct: string[]
   fixedOrder: boolean
   explanation: string
+  /** How referees decide when the rule text alone does not (spec 6.3). */
+  interpretation?: string | null
   ruleRefs: string[]
   media: Media | null
   requiresVision: boolean

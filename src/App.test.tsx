@@ -49,8 +49,10 @@ describe('App', () => {
     await screen.findByText('Trainee · Serve 1 of 12', { selector: 'h1' })
     await expectNoAxeViolations()
 
+    const played: typeof allQuestions = []
     for (let i = 0; i < 12; i++) {
       const q = currentQuestion()
+      played.push(q)
       // Get two wrong on purpose: 10 of 12 is the pass mark.
       const wrong = i < 2
       choose(wrong ? [q.options.find((o) => !q.correct.includes(o.id))!.id] : q.correct)
@@ -58,6 +60,13 @@ describe('App', () => {
       const heading = await screen.findByRole('heading', { level: 2, name: wrong ? 'Incorrect. Point for the Rulebook.' : 'Correct. Goal for you.' })
       await waitFor(() => expect(document.activeElement).toBe(heading))
       expect(screen.getByRole('group')).toHaveProperty('disabled', true)
+      expect(screen.getByText(`Question ${q.id}`)).toBeTruthy()
+      if (q.interpretation) {
+        expect(screen.getByRole('heading', { level: 3, name: 'How this answer is derived' })).toBeTruthy()
+        expect(screen.getByText(q.interpretation)).toBeTruthy()
+      } else {
+        expect(screen.queryByRole('heading', { level: 3 })).toBeNull()
+      }
       if (i === 0) {
         expect(screen.getAllByText('Your answer · incorrect').length).toBeGreaterThan(0)
         await expectNoAxeViolations()
@@ -80,6 +89,11 @@ describe('App', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Show all 12 answers' }))
     expect(screen.getByRole('button', { name: 'Hide answers' }).getAttribute('aria-expanded')).toBe('true')
+    expect(played.some((q) => q.interpretation)).toBe(true)
+    const allAnswers = document.getElementById('all-answers')!
+    expect(Array.from(allAnswers.querySelectorAll('b')).filter((b) => b.textContent === 'Interpretation')).toHaveLength(
+      played.filter((q) => q.interpretation).length,
+    )
     await expectNoAxeViolations()
 
     fireEvent.click(screen.getByRole('link', { name: 'Back to levels' }))

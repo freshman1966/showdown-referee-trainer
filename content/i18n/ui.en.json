@@ -95,7 +95,9 @@
     "rules": "Rules {refs}",
     "rule": "Rule {refs}",
     "next": "Next serve",
-    "finish": "See result"
+    "finish": "See result",
+    "interpretationHeading": "How this answer is derived",
+    "interpretationLabel": "Interpretation"
   },
   "result": {
     "label": "{level} · result",

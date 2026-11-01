@@ -53,4 +53,15 @@ describe('validateContent', () => {
     expect(errors).toMatch(/"correct" in questions\.de\.json differs/)
     expect(errors).toMatch(/missing in questions\.de\.json/)
   })
+
+  it('treats interpretation as translatable text but requires it in every locale', () => {
+    const packs = withQuestions(() => {})
+    const de = clone(packs[0].questions.en as any[])
+    const withText = de.filter((q) => q.interpretation)
+    withText[0].interpretation = 'Übersetzt.'
+    withText[1].interpretation = null
+    packs[0].questions.de = de
+    const errors = validateContent(packs, ui, 'preview').errors
+    expect(errors).toEqual([`packs/core-2026 ${withText[1].id}: interpretation in questions.de.json is missing`])
+  })
 })

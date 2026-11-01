@@ -11,7 +11,7 @@ import type { PackMeta, Question } from '../src/content/types.ts'
 const SCHEMA_DIR = join(import.meta.dirname, '..', 'schema')
 const LEVEL_PREFIX = { trainee: 'T', national: 'N', international: 'I' } as const
 /** Fields a translation may change. Everything else must match the default-locale file. */
-const TEXT_FIELDS = new Set(['prompt', 'scenario', 'options', 'explanation', 'reviewNote'])
+const TEXT_FIELDS = new Set(['prompt', 'scenario', 'options', 'explanation', 'interpretation', 'reviewNote'])
 
 export interface Report {
   errors: string[]
@@ -101,6 +101,9 @@ export function validateContent(packs: RawPack[], ui: Record<string, unknown>, m
         if (ids(q) !== ids(t)) errors.push(`${where} ${q.id}: option ids in questions.${locale}.json differ`)
         if ((q.scenario === null) !== (t.scenario === null)) {
           errors.push(`${where} ${q.id}: scenario in questions.${locale}.json is ${t.scenario === null ? 'missing' : 'extra'}`)
+        }
+        if (!q.interpretation !== !t.interpretation) {
+          errors.push(`${where} ${q.id}: interpretation in questions.${locale}.json is ${t.interpretation ? 'extra' : 'missing'}`)
         }
       }
       for (const id of translated.keys()) errors.push(`${where} ${id}: in questions.${locale}.json but not in ${meta.defaultLocale}`)

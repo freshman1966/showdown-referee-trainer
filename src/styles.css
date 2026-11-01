@@ -841,6 +841,14 @@ a {
   color: var(--incorrect);
 }
 
+.feedback__interpretation {
+  border-left: 4px solid var(--border);
+  padding-left: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
 .feedback__refs {
   font-size: var(--fs-small);
   font-weight: 700;

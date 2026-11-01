@@ -17,6 +17,7 @@
 | 2026-10-25 | Diagrams | v1 text only. v1.1 adds own SVG diagrams (`media`, with text alternative) and `requiresVision` with a screen reader mode. One quiz, no separate versions |
 | 2026-10-25 | No-fault scenarios | About 20–30 % of scenarios have "no decision, play continues" (or equivalent) as the correct answer |
 | 2026-10-25 | Design sprint | Visual design and screens are drafted on a design canvas before the hand-off to Claude Code. Draft: name "Call it.", font Atkinson Hyperlegible Next, light / dark / high-contrast themes (pending Stefan's choice) |
+| 2026-11-01 | Transparency | Controversial questions are allowed. Where the rule text does not decide a case alone, the question carries an `interpretation` text shown to the player: which rules apply, where the text is unclear, how referees decide |
 
 ## Backlog
 

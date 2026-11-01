@@ -32,6 +32,11 @@ function AnswerItem({ question, answer, showStatus }: { question: Question; answ
       <p>
         <b class="label-correct">{t('result.correctAnswer')}</b> {optionTexts(question, question.correct)}
       </p>
+      {question.interpretation && (
+        <p>
+          <b>{t('feedback.interpretationLabel')}</b> {question.interpretation}
+        </p>
+      )}
       <p class="muted small">
         {formatRuleRefs(question.ruleRefs)} · {t('a11y.questionId', { id: question.id })}
       </p>

@@ -211,6 +211,12 @@ function QuestionView({ run, index, onNext }: { run: Run; index: number; onNext:
               {t(`feedback.${feedbackKind}Heading`)}
             </h2>
             <p>{question.explanation}</p>
+            {question.interpretation && (
+              <div class="feedback__interpretation">
+                <h3>{t('feedback.interpretationHeading')}</h3>
+                <p>{question.interpretation}</p>
+              </div>
+            )}
             <p class="feedback__refs">{formatRuleRefs(question.ruleRefs)}</p>
             <p class="feedback__id">{t('a11y.questionId', { id: question.id })}</p>
             <div>

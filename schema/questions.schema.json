@@ -73,6 +73,7 @@
           ]
         },
         "requiresVision": { "type": "boolean" },
+        "interpretation": { "type": ["string", "null"], "minLength": 1 },
         "reviewNote": { "type": ["string", "null"] }
       }
     },

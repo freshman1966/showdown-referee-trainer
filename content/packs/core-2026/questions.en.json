@@ -36,6 +36,7 @@
     ],
     "fixedOrder": false,
     "explanation": "An individual set is won by the player who first reaches at least 11 points with a margin of 2 points. Team play uses 31 points with a 2-point margin.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "8.3"
@@ -82,6 +83,7 @@
     ],
     "fixedOrder": true,
     "explanation": "When the ball fully enters the goal pocket, the referee blows a double whistle, calls \"Goal\" and awards 2 points to the scoring player.",
+    "interpretation": null,
     "ruleRefs": [
       "16.2.1"
     ],
@@ -126,6 +128,7 @@
     ],
     "fixedOrder": true,
     "explanation": "A match is played over an odd number of sets: 1, best of 3, or best of 5. The winner is the player who wins the majority of sets.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "8.1",
@@ -172,6 +175,7 @@
     ],
     "fixedOrder": true,
     "explanation": "A serve turn in individual play is 2 serves. In team play each player serves 3 times.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "14.2",
@@ -218,6 +222,7 @@
     ],
     "fixedOrder": true,
     "explanation": "The ball must be served within 2 seconds of the whistle. Serving later is an irregular serve and gives 1 point to the opponent. The server may reposition the ball after the whistle, but the 2 seconds still apply.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "16.3.2"
@@ -234,13 +239,13 @@
       "faults"
     ],
     "importance": "critical",
-    "frequency": "common",
+    "frequency": "rare",
     "type": "single",
     "difficulty": 1,
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A serves. The ball bounces once off the sidewall and then passes over the centre screen.",
+    "scenario": "Player A serves. The ball bounces once off the sidewall and then passes over the centre board screen.",
     "options": [
       {
         "id": "a",
@@ -248,7 +253,7 @@
       },
       {
         "id": "b",
-        "text": "1 point to Player B"
+        "text": "1 point to Player B, called as irregular serve or centre board"
       },
       {
         "id": "c",
@@ -263,8 +268,11 @@
       "b"
     ],
     "fixedOrder": false,
-    "explanation": "A ball that passes over the centre screen is a centre-screen fault. The opponent receives 1 point. This also applies on a serve.",
+    "explanation": "A served ball that passes over the centre board screen does not complete the serve. The opponent receives 1 point.",
+    "interpretation": "A served ball that passes over the centre board screen breaks two rules: 16.3.7 (the serve must pass under the centre board, call \"irregular serve\") and 16.4.1 (the ball passes over the centre board screen, call \"centre board\"). Both give 1 point to the opponent. The rules do not say which call to announce, and referees use either call. The decision, 1 point to the opponent, is the same.",
     "ruleRefs": [
+      "6",
+      "16.3.7",
       "16.4.1"
     ],
     "media": null,
@@ -284,7 +292,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A serves. The ball slides along the sidewall and then passes under the centre screen.",
+    "scenario": "Player A serves. The ball slides along the sidewall and then passes under the centre board screen.",
     "options": [
       {
         "id": "a",
@@ -307,7 +315,8 @@
       "c"
     ],
     "fixedOrder": false,
-    "explanation": "A served ball must bounce off the sidewall exactly once before it passes under the centre screen. A ball sliding along the wall counts as more than one bounce. This is an irregular serve: 1 point to the opponent.",
+    "explanation": "A served ball must bounce off the sidewall exactly once before it passes under the centre board screen. A ball sliding along the wall counts as more than one bounce. This is an irregular serve: 1 point to the opponent.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "16.3.7"
@@ -330,7 +339,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A serves. The ball bounces once off the sidewall, touches the bottom edge of the centre screen and passes straight through to Player B's half.",
+    "scenario": "Player A serves. The ball bounces once off the sidewall, touches the bottom edge of the centre board screen and passes straight through to Player B's half.",
     "options": [
       {
         "id": "a",
@@ -342,7 +351,7 @@
       },
       {
         "id": "c",
-        "text": "1 point to Player B for a centre-screen fault"
+        "text": "1 point to Player B for centre board"
       },
       {
         "id": "d",
@@ -353,7 +362,8 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "After exactly one sidewall bounce, a ball that touches the bottom of the centre screen and passes directly to the other side is not a fault. It is a centre-screen fault only if the ball goes over the screen or loses its forward motion after hitting it.",
+    "explanation": "After exactly one sidewall bounce, a served ball that touches the bottom of the centre board screen and passes directly to the other side is not a fault. The rules state this explicitly for the serve (16.3.7 b) and define this as \"forward motion\" (16.4.2 a).",
+    "interpretation": null,
     "ruleRefs": [
       "16.3.7",
       "16.4.2"
@@ -399,6 +409,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Dropping the bat is a bat infraction: 1 point to the opponent. Only a broken bat leads to a stop and a re-serve.",
+    "interpretation": null,
     "ruleRefs": [
       "16.9.2",
       "16.9.3"
@@ -420,7 +431,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "During a rally, the ball touches Player B's hand protection on the batting hand, about 3 cm above the wrist joint.",
+    "scenario": "During a rally, outside B's goal area, the ball touches Player B's hand protection on the batting hand, about 3 cm above the wrist joint.",
     "options": [
       {
         "id": "a",
@@ -444,6 +455,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The batting hand is the hand up to and including 60 mm past the wrist joint, including the hand protection. Contact between the ball and the batting hand is allowed (outside the goal area). A body touch is contact with any other part of the body.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "16.5.1"
@@ -465,7 +477,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player B stops the ball with the bat and holds it still. The ball is silent for about 3 seconds before Player B plays it.",
+    "scenario": "Outside B's goal area, Player B stops the ball with the bat and holds it still. The ball is silent for about 3 seconds before Player B plays it.",
     "options": [
       {
         "id": "a",
@@ -489,6 +501,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Trapping or stopping the ball so that it is inaudible for more than 2 seconds is a ball infraction: 1 point to the opponent. The referee judges the time; no stopwatch is used.",
+    "interpretation": null,
     "ruleRefs": [
       "16.10.1"
     ],
@@ -509,7 +522,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "After a weak shot, the ball rolls very slowly and comes to rest near the middle of the table, out of reach of both players. No player has trapped it.",
+    "scenario": "During a rally, Player B returns the ball weakly. The ball rolls very slowly and comes to rest near the middle of the table, out of reach of both players. No player has trapped it.",
     "options": [
       {
         "id": "a",
@@ -532,7 +545,8 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "When the ball moves so slowly that it will not reach a point where a player can continue, or it is inaudible for more than 2 seconds without being trapped, the referee blows one whistle, calls \"Dead ball\" and orders a re-serve.",
+    "explanation": "Once the ball is in play, a ball that moves so slowly that it will not reach a point where a player can continue (17.1), or that is inaudible for more than 2 seconds (17.2), is a dead ball: the referee blows one whistle, calls \"Dead ball\" and orders a re-serve. If a player traps the ball, that is a ball infraction instead (16.10.1). A served ball that stops before passing under the centre board screen is not a dead ball but an irregular serve.",
+    "interpretation": null,
     "ruleRefs": [
       "17.1",
       "17.2"
@@ -579,6 +593,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The bat and batting hand must not touch the ball in the goal area. If they do and the ball then stops or goes anywhere other than directly into the goal, it is illegal defence: 1 point to the opponent. If it goes directly into the goal, it is a goal (2 points).",
+    "interpretation": null,
     "ruleRefs": [
       "16.6.1"
     ],
@@ -623,6 +638,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Each player has one time-out of 60 seconds per set. In team play each team has one 60-second time-out per match.",
+    "interpretation": null,
     "ruleRefs": [
       "18.2.1",
       "23.14"
@@ -671,6 +687,7 @@
     ],
     "fixedOrder": true,
     "explanation": "A time-out may be requested by the player or the coach, only during a break in play. A \"15 seconds\" warning is given before the time-out ends.",
+    "interpretation": null,
     "ruleRefs": [
       "18.2.2",
       "18.2.3",
@@ -718,6 +735,7 @@
     ],
     "fixedOrder": false,
     "explanation": "A player may touch the mask only between sets, during time-outs and during change of sides. At any other time, touching it without the referee's permission is penalised immediately with 2 points to the opponent. There is no warning first.",
+    "interpretation": null,
     "ruleRefs": [
       "11.3",
       "20.4.1"
@@ -763,6 +781,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Shoving the table, or moving it excessively or constantly in a disturbing way, is one of the infractions listed in 20.3. The first such infraction in a match is a warning. Play stopped to give the warning resumes with a re-serve.",
+    "interpretation": null,
     "ruleRefs": [
       "20.1",
       "20.3.4"
@@ -808,9 +827,12 @@
     ],
     "fixedOrder": false,
     "explanation": "Warnings are valid for the whole match. Any second infraction from the 20.3 list is penalised with 2 points to the opponent, even if it is a different type of infraction from the first.",
+    "interpretation": null,
     "ruleRefs": [
       "20.2",
-      "20.3"
+      "20.3",
+      "20.3.5",
+      "20.3.6"
     ],
     "media": null,
     "requiresVision": false,
@@ -854,6 +876,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Players change sides after each set. In a single-set match and in the last set of a match they also change when one player reaches 6 points (or after half of the stop-time, in a time-limited match). Change of sides lasts 60 seconds with a \"15 seconds\" warning.",
+    "interpretation": null,
     "ruleRefs": [
       "19.1",
       "19.2",
@@ -901,6 +924,7 @@
     ],
     "fixedOrder": true,
     "explanation": "One whistle starts or stops play, a double whistle signals a goal, and a long whistle ends a set or the match.",
+    "interpretation": null,
     "ruleRefs": [
       "15.1",
       "16.2"
@@ -946,6 +970,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Invasion is holding the non-batting hand in the inner playing area. The inner playing area ends at an imaginary horizontal line at the height of the sidewall tops. A hand held above that line, even above the table, is not an invasion.",
+    "interpretation": null,
     "ruleRefs": [
       "1",
       "16.8.1",
@@ -992,6 +1017,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The non-batting hand is inside the inner playing area (below the imaginary line at the height of the sidewall tops) and the player is not switching hands. This is an invasion: 1 point to the opponent. Ball contact is not required.",
+    "interpretation": null,
     "ruleRefs": [
       "16.8.1",
       "Appendix 6"
@@ -1037,6 +1063,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Switching the bat to the other hand is an explicit exception in both rules: the non-batting hand may enter the inner playing area while switching hands (16.8.1), and the bat may be held with both hands while switching (16.9.1).",
+    "interpretation": null,
     "ruleRefs": [
       "16.8.1",
       "16.9.1"
@@ -1082,6 +1109,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Holding the table with the non-batting hand is not allowed, except at the end of the table. The end of the table includes the whole curve. Holding the curve is therefore allowed.",
+    "interpretation": null,
     "ruleRefs": [
       "1",
       "20.3.2"
@@ -1128,6 +1156,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Holding any part of the table with the non-batting hand, other than the end of the table, is an infraction under 20.3.2. The hand is outside the inner playing area, so it is not an invasion. First infraction: warning.",
+    "interpretation": null,
     "ruleRefs": [
       "20.3.2",
       "20.3"
@@ -1149,7 +1178,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "During a rally, Player A grips the contact board on A's end wall with the non-batting hand.",
+    "scenario": "During a rally, Player A wraps the fingers of the non-batting hand around the contact board at A's end, with the fingertips under its inner edge.",
     "options": [
       {
         "id": "a",
@@ -1172,9 +1201,12 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "Gripping the contact board with the non-batting hand is listed as an invasion (16.8.2): 1 point to the opponent. This applies even though holding the end of the table is otherwise allowed.",
+    "explanation": "Gripping the contact board with the non-batting hand is an invasion: 1 point to the opponent (16.8.2). The bottom of the contact board, which overhangs the inside of the table by 50 mm, is part of the inner playing area. The contact board is not part of the end of the table, where holding is allowed (20.3.2).",
+    "interpretation": null,
     "ruleRefs": [
-      "16.8.2"
+      "1",
+      "16.8.2",
+      "20.3.2"
     ],
     "media": null,
     "requiresVision": false,
@@ -1223,6 +1255,7 @@
     ],
     "fixedOrder": true,
     "explanation": "Rule 20.4 lists three infractions penalised immediately with 2 points: touching the mask at a non-permitted time without permission, noise from a phone or other device of the player or coach, and secret signs from the coach. Talking and hooking the ball are in the 20.3 list: warning first, penalty from the second infraction.",
+    "interpretation": null,
     "ruleRefs": [
       "20.3.3",
       "20.3.6",
@@ -1248,7 +1281,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A calls a time-out. During the time-out, Player A adjusts the mask without asking the referee.",
+    "scenario": "Player A requests a time-out and the referee grants it. During the time-out, Player A adjusts the mask without asking the referee.",
     "options": [
       {
         "id": "a",
@@ -1272,6 +1305,7 @@
     ],
     "fixedOrder": false,
     "explanation": "A player may touch the mask between sets, during time-outs and during change of sides without asking. Permission is only needed at other times. Before play resumes, the referee checks that the mask is worn correctly.",
+    "interpretation": null,
     "ruleRefs": [
       "11.3",
       "11.4",
@@ -1319,6 +1353,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Noise from a mobile phone or other device of the player or their coach is penalised immediately with 2 points to the opponent. When the referee stops play to give a penalty, play resumes with a re-serve.",
+    "interpretation": null,
     "ruleRefs": [
       "20.1",
       "20.4.2"
@@ -1340,7 +1375,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A has no previous warning. During a rally, Player A steps beside the table and plays the ball while standing next to the sidewall, in front of the point where the curve meets the sidewall.",
+    "scenario": "Player A has no previous warning. During a rally, Player A steps to the side of the table to reach the ball. One foot is now next to the sidewall, about 60 cm in front of A's end wall. The other foot is still behind the end of the table.",
     "options": [
       {
         "id": "a",
@@ -1363,8 +1398,10 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "The player position area is behind the table. Its front boundary is the imaginary line through the two points where the curves meet the sidewalls, extended sideways. Playing in front of that line, beside the sidewall, is playing outside the position area. First infraction: warning.",
+    "explanation": "The front boundary of the player position area is an imaginary line across the table where the curves end and the straight sidewalls begin, about 23 cm from the inside of the end wall (curve radius 230 mm), extended sideways without limit. With one foot beside the sidewall beyond this line, Player A is playing outside the position area. First infraction: warning.",
+    "interpretation": "Rule 5.1 defines the position area but does not say which part of the player decides. Referees judge by the feet: a player with at least one foot beside the sidewall, beyond the line where the curves end, is outside the position area. Leaning the upper body does not count.",
     "ruleRefs": [
+      "1",
       "5.1",
       "20.3.1",
       "Appendix 5"
@@ -1386,7 +1423,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "During a rally, Player A plays the ball while standing behind the table, half a step further to the side than the outside edge of the sidewall, and behind the point where the curve meets the sidewall.",
+    "scenario": "During a rally, Player A stands behind A's end of the table, close to the curve. To reach a ball running along the sidewall, A leans forward and to the side and plays the ball with the bat. Both feet stay behind the end of the table.",
     "options": [
       {
         "id": "a",
@@ -1398,20 +1435,23 @@
       },
       {
         "id": "c",
-        "text": "1 point to Player B"
+        "text": "1 point to Player B for invasion"
       },
       {
         "id": "d",
-        "text": "Warning to Player A for delaying the game"
+        "text": "Warning to Player A for not having at least one foot on the ground"
       }
     ],
     "correct": [
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "The player position area has no limit at the back or at the sides. Standing to the side, wider than the table, is allowed as long as the player stays behind the line through the points where the curves meet the sidewalls.",
+    "explanation": "Both feet are behind the end of the table, inside the player position area. Leaning the upper body forward and to the side does not take the player out of the position area.",
+    "interpretation": "Rule 5.1 defines the position area but does not say which part of the player decides. Referees judge by the feet: a player with at least one foot beside the sidewall, beyond the line where the curves end, is outside the position area. Leaning the upper body does not count.",
     "ruleRefs": [
+      "1",
       "5.1",
+      "20.3.1",
       "Appendix 5"
     ],
     "media": null,
@@ -1439,7 +1479,7 @@
       },
       {
         "id": "b",
-        "text": "On the same side as the first referee, next to the centre screen"
+        "text": "On the same side as the first referee, next to the centre board screen"
       },
       {
         "id": "c",
@@ -1454,7 +1494,8 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "The coaches' standing area is on the side of the table opposite the first referee. It runs along the table from the point where the curve meets the sidewall to the centre screen, up to 2 m from the sidewall. The coach must stay on their player's side of the table. In exceptional cases the referee may designate another area.",
+    "explanation": "The coaches' standing area is on the side of the table opposite the first referee. It runs along the table from the point where the curve meets the sidewall to the centre board screen, up to 2 m from the sidewall. The coach must stay on their player's side of the table. In exceptional cases the referee may designate another area.",
+    "interpretation": null,
     "ruleRefs": [
       "5.2",
       "11.8",
@@ -1477,7 +1518,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "During a rally, Player B leans the upper body far forward over B's end of the table. The ball does not touch B's body.",
+    "scenario": "During a rally, Player B leans the upper body far forward over B's end of the table. B's non-batting hand stays above the height of the sidewall tops, and both feet stay on the floor behind B's end of the table. The ball does not touch B's body.",
     "options": [
       {
         "id": "a",
@@ -1501,6 +1542,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Leaning the upper body into the playing area is allowed. Only if the ball touches the body (other than the bat or batting hand) is it a body touch.",
+    "interpretation": null,
     "ruleRefs": [
       "16.8 (note)",
       "16.5.1"
@@ -1546,6 +1588,7 @@
     ],
     "fixedOrder": false,
     "explanation": "If the bat or batting hand touches the ball inside the goal area and the ball moves directly into the goal, it is a goal: 2 points to the opponent.",
+    "interpretation": null,
     "ruleRefs": [
       "16.6.1",
       "16.2.1"
@@ -1568,7 +1611,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player B's bat touches the ball inside B's goal area. The ball then bounces against B's non-batting hand and rolls back onto the table.",
+    "scenario": "Player B's bat touches the ball inside B's goal area. The ball then bounces against B's batting arm, about 15 cm above the wrist, and rolls back onto the table.",
     "options": [
       {
         "id": "a",
@@ -1591,8 +1634,10 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "If the ball touches the bat or batting hand in the goal area and then touches another part of the body, the call is body touch, not illegal defence: 1 point to the opponent. Only one playing mistake is called.",
+    "explanation": "If the ball touches the bat or batting hand in the goal area and then touches another part of the body, the call is body touch, not illegal defence: 1 point to the opponent. The batting hand ends 60 mm above the wrist joint, so the arm 15 cm above the wrist is another part of the body. Only one playing mistake is called.",
+    "interpretation": null,
     "ruleRefs": [
+      "6",
       "16.6.1",
       "16.5.1"
     ],
@@ -1637,6 +1682,7 @@
     ],
     "fixedOrder": false,
     "explanation": "If the ball hits the ceiling or any other object that is not part of the table or a player's batting hand, it is out: 1 point to the opponent of the player who hit it.",
+    "interpretation": null,
     "ruleRefs": [
       "16.7.3"
     ],
@@ -1681,6 +1727,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The top of the contact board is not part of the playing area. A hit ball that touches the top of the contact board is out: 1 point to the opponent.",
+    "interpretation": null,
     "ruleRefs": [
       "1",
       "16.7.2"
@@ -1726,6 +1773,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Touching the ball with the bat more than once when serving is an irregular serve: 1 point to the opponent. A second attempt after a poor first contact is not allowed, even within the 2 seconds. (Only a complete miss without any audible sound allows another swing.)",
+    "interpretation": "Rule 16.3.1 calls touching the ball with the bat more than once on the serve an irregular serve. Its sub-rule a) says each touch counts as 1 serve; this wording is unclear about the serve count. Referees apply the main rule: a second touch after a poor first contact is an irregular serve, 1 point to the opponent.",
     "ruleRefs": [
       "16.3",
       "16.3.1",
@@ -1772,6 +1820,7 @@
     ],
     "fixedOrder": false,
     "explanation": "If the server misses the ball and the referee hears a sound, the swing counts as one serve. Missing the ball is listed under irregular serve: 1 point to the opponent. Without any audible sound, the player may swing again until the 2 seconds have passed.",
+    "interpretation": "Rule 16.3.6 b) only says that the swing \"counts as one service\". Rule 16.3.6 is listed under 16.3, irregular serve, which awards 1 point to the opponent. The swing is therefore called as an irregular serve.",
     "ruleRefs": [
       "16.3",
       "16.3.6"
@@ -1817,8 +1866,196 @@
     ],
     "fixedOrder": false,
     "explanation": "The referee rolls the ball to the serving player and announces first the serve number, then the score, both referred to the server. Then the referee asks first the returner and then the server if they are ready. After both say \"yes\", the referee whistles once. The same procedure is used at the start of the match, each set, after time-outs, change of sides and unusually long breaks.",
+    "interpretation": null,
     "ruleRefs": [
       "15.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-021",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player A rests the non-batting hand on top of the contact board at A's end. One finger touches the front of the contact board. No finger is under the contact board.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 point to Player B for invasion"
+      },
+      {
+        "id": "b",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "c",
+        "text": "Warning to Player A for holding the table"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player B for out"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The front of the contact board is part of the playing area. A finger of the non-batting hand on the front of the contact board is an invasion: 1 point to the opponent. The hand may rest on top of the contact board, because the top is not part of the playing area.",
+    "interpretation": "Section 1 lists the front of the contact board as part of the playing area. It does not list the front as part of the inner playing area, which rule 16.8.1 refers to. The 2022–2025 rules excluded the front from the inner playing area explicitly. Referees call a finger of the non-batting hand on the front of the contact board an invasion.",
+    "ruleRefs": [
+      "1",
+      "16.8"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-022",
+    "level": "national",
+    "topics": [
+      "faults"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "During a rally, Player A rests the non-batting hand flat on top of the contact board at A's end. No finger touches the front of the contact board or reaches under it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No decision, play continues"
+      },
+      {
+        "id": "b",
+        "text": "1 point to Player B for invasion"
+      },
+      {
+        "id": "c",
+        "text": "Warning to Player A for holding the table"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player B for out"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "The top of the contact board is not part of the playing area. A non-batting hand resting on top of the contact board, without touching its front or reaching under it, is allowed.",
+    "interpretation": "The contact board is part of the table, but not part of the end of the table (section 1), where holding is allowed (20.3.2). Read literally, resting a hand on it could be \"holding on to part of the table\". Referees treat a hand that only rests flat on top of the contact board, without gripping it or touching its front, as neither holding (20.3.2) nor invasion (16.8).",
+    "ruleRefs": [
+      "1",
+      "16.8",
+      "20.3.2"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-023",
+    "level": "national",
+    "topics": [
+      "serve",
+      "dead-ball"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 2,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves too softly. The ball bounces once off the sidewall, rolls slowly and stops in A's half before it reaches the centre board screen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Irregular serve: 1 point to Player B"
+      },
+      {
+        "id": "b",
+        "text": "Dead ball, re-serve"
+      },
+      {
+        "id": "c",
+        "text": "Let, re-serve"
+      },
+      {
+        "id": "d",
+        "text": "1 point to Player B for centre board"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "A served ball that stops before the centre board screen has not completed the serve. It is called as an irregular serve: 1 point to the opponent. A dead ball is only called once the ball is in play.",
+    "interpretation": "No rule names this case directly. Rule 16.3.7 is written about the number of sidewall bounces before the ball passes under the centre board. The definition of \"Serve\" (rule 6) makes passing under the centre board part of a valid serve. A ball that stops before the centre board has not completed a valid serve, so it is not yet in play and cannot be a dead ball. Rule 17.1 (dead ball) does not say this explicitly. Referees call this case as an irregular serve.",
+    "ruleRefs": [
+      "6",
+      "16.3.7"
+    ],
+    "media": null,
+    "requiresVision": false,
+    "reviewNote": null
+  },
+  {
+    "id": "N-024",
+    "level": "national",
+    "topics": [
+      "serve"
+    ],
+    "importance": "critical",
+    "frequency": "common",
+    "type": "single",
+    "difficulty": 3,
+    "edition": "2026-2028",
+    "status": "draft",
+    "prompt": "What is the decision?",
+    "scenario": "Player A serves. The ball bounces once off the sidewall, hits the centre board screen and stops. It does not pass to Player B's half.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Irregular serve: 1 point to Player B"
+      },
+      {
+        "id": "b",
+        "text": "Centre board: 1 point to Player B"
+      },
+      {
+        "id": "c",
+        "text": "Dead ball, re-serve"
+      },
+      {
+        "id": "d",
+        "text": "Let, re-serve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "fixedOrder": false,
+    "explanation": "A served ball must bounce off the sidewall exactly once and then pass under the centre board screen. A ball that hits the screen and stops has not completed the serve. The call is \"irregular serve\": 1 point to the opponent.",
+    "interpretation": "Two rules describe this case. Rule 16.4.2 says a ball that hits the centre board screen and stops its forward motion is a \"centre board\" fault. Rule 16.3.7 says a served ball must pass under the centre board, otherwise it is an \"irregular serve\". Both give 1 point to the opponent. The rules do not say which call applies on the serve. Referees call \"irregular serve\", because the serve was not completed.",
+    "ruleRefs": [
+      "6",
+      "16.3.7",
+      "16.4.2"
     ],
     "media": null,
     "requiresVision": false,
@@ -1838,11 +2075,11 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Set 1 has just ended. Before changing sides, Player A lifts the mask to wipe the eyes. A has not asked for permission.",
+    "scenario": "Player A has no previous warning. Set 1 has just ended. Before changing sides, Player A lifts the mask to wipe the eyes. A has not asked for permission.",
     "options": [
       {
         "id": "a",
-        "text": "2-point penalty: the next set starts 2:0 for Player B"
+        "text": "Warning to Player A"
       },
       {
         "id": "b",
@@ -1850,7 +2087,7 @@
       },
       {
         "id": "c",
-        "text": "Warning to Player A"
+        "text": "2-point penalty: the next set starts 2:0 for Player B"
       },
       {
         "id": "d",
@@ -1861,10 +2098,13 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "Between sets, the player may touch the mask only after changing sides. Touching it before is a penalty without warning (2 points). If a penalty is given before the set has begun, the set starts 2:0 for the player who receives the points.",
+    "explanation": "Between sets, a player may touch the mask without permission, but only after changing sides. Touching it before changing sides breaks this condition. The case is sanctioned with a warning. Because the warning is given before the next set begins, that set starts with the warning on record. A second infraction of this kind, or any other infraction from the 20.3 list, would be a 2-point penalty.",
+    "interpretation": "Rule 11.3 allows touching the mask between sets; 11.3 a) adds that between sets the player may do so \"only after he/she has changed the side\". The penalty without warning in 20.4.1 covers touching the mask \"when not between sets, during time-outs or a change of sides\", so it does not cover this case. No rule names a sanction for touching the mask between sets before changing sides. Referees treat it as a disturbing activity under 20.3.9: a warning for the first infraction.",
     "ruleRefs": [
       "11.3",
       "20.1",
+      "20.3",
+      "20.3.9",
       "20.4.1"
     ],
     "media": null,
@@ -1909,6 +2149,7 @@
     ],
     "fixedOrder": false,
     "explanation": "When the ball is not in play, a coach may cheer only in the official languages of the tournament. An infraction is treated under 20.4.3: immediate 2-point penalty, serious misconduct, and the referee sends the coach out of the playing room.",
+    "interpretation": null,
     "ruleRefs": [
       "11.7",
       "20.4.3"
@@ -1955,6 +2196,7 @@
     ],
     "fixedOrder": false,
     "explanation": "In team play, warnings are valid for the whole match and for the whole team. A second infraction from the 20.3 list by any player of the same team is penalised with 2 points to the opponent.",
+    "interpretation": null,
     "ruleRefs": [
       "20.3",
       "23.15"
@@ -2001,6 +2243,7 @@
     ],
     "fixedOrder": false,
     "explanation": "After serving 3 times a player leaves the table. B1 leaves after serving, A2 stays and serves 3 times against B2. The order continues: B2 against A3, A3 against B3, B3 against A1, A1 against B1.",
+    "interpretation": null,
     "ruleRefs": [
       "23.2",
       "24"
@@ -2036,7 +2279,7 @@
       },
       {
         "id": "c",
-        "text": "The match is won at 31 points with a 2-point margin"
+        "text": "The match is won by the first team to reach at least 31 points with a lead of 2 points"
       },
       {
         "id": "d",
@@ -2054,6 +2297,7 @@
     ],
     "fixedOrder": true,
     "explanation": "A team match is one set to 31 points with a 2-point margin. Teams change sides when one team reaches 16. Each team has one time-out of 60 seconds per match.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "23.1",
@@ -2107,6 +2351,7 @@
     ],
     "fixedOrder": true,
     "explanation": "Each team has one substitution per match, requested by the coach or captain during a break in play. 30 seconds are allowed. A player substituted at the table is replaced in the current serve or return sequence. The substituted player may not play again in that match.",
+    "interpretation": null,
     "ruleRefs": [
       "23.8",
       "23.8.1",
@@ -2155,6 +2400,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The line-up must be mixed: at least one male and one female player. After a substitution, the team must still be mixed. Replacing the only male player with a female player breaks this rule.",
+    "interpretation": null,
     "ruleRefs": [
       "22.2",
       "23.8.3"
@@ -2205,6 +2451,7 @@
     ],
     "fixedOrder": true,
     "explanation": "Maximum total length is 300 mm. Blades with a non-wooden surface must be covered with soft material. Blade width up to 75 mm, handle diameter up to 40 mm and a total blade thickness of 10 mm including soft cover are allowed.",
+    "interpretation": null,
     "ruleRefs": [
       "3",
       "10.2",
@@ -2250,7 +2497,8 @@
       "a"
     ],
     "fixedOrder": false,
-    "explanation": "Gloves are measured at the wrist, the knuckles and the middle finger joints, first the bare hand, then the gloved hand. The gloved hand may be at most 40 mm wider (20 mm on each side) and at most 25 mm thicker. 45 mm wider exceeds the limit, so the glove is rejected.",
+    "explanation": "Gloves are measured at the wrist, the knuckles and the middle joint of the fingers, first the bare hand, then the gloved hand. The gloved hand may be at most 40 mm wider (20 mm on each side) and at most 25 mm thicker. 45 mm wider exceeds the limit, so the glove is rejected.",
+    "interpretation": null,
     "ruleRefs": [
       "4.3",
       "Appendix 3"
@@ -2297,6 +2545,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The batting hand is the hand up to and including 60 mm past the wrist joint, including hand protection. Arm protection beyond that, such as a sweatband, is not part of the batting hand. Ball contact there is a body touch.",
+    "interpretation": null,
     "ruleRefs": [
       "4.3",
       "6",
@@ -2343,6 +2592,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Only darkened alpine ski goggles or adequate alternatives such as goalball masks are allowed. The mask must be semi-rigid or rigid. Sleep masks are explicitly prohibited, even if they block all light. Players who medically cannot wear a standard mask must wear occlusive eye patches.",
+    "interpretation": null,
     "ruleRefs": [
       "4.1",
       "10.2"
@@ -2389,6 +2639,7 @@
     ],
     "fixedOrder": false,
     "explanation": "When a bat breaks, play cannot continue. Points scored after the bat broke do not count, even if the referee has not yet whistled. After the bat is replaced, play resumes with a re-serve.",
+    "interpretation": null,
     "ruleRefs": [
       "16.9.3"
     ],
@@ -2434,6 +2685,7 @@
     ],
     "fixedOrder": false,
     "explanation": "After a medical time-out, the player must be ready within 5 minutes; otherwise the player gives up the match. In contrast, a player who does not return within 5 minutes from a toilet visit loses by default.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "18.3.2",
@@ -2481,6 +2733,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Throwing the bat is very serious misconduct: the player loses the match by default. A player who loses by default loses all sets without any scored points; points and sets already won are annulled.",
+    "interpretation": null,
     "ruleRefs": [
       "6",
       "20.5.1"
@@ -2526,6 +2779,7 @@
     ],
     "fixedOrder": false,
     "explanation": "A player who is more than 5 minutes late loses by default. The 5-minute count starts when at least one referee is present and, in case of delay, the table is free. Player A arrived 3 minutes after the table became free.",
+    "interpretation": null,
     "ruleRefs": [
       "20.5.3"
     ],
@@ -2546,7 +2800,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A places the ball on the playing deck and lets go. Because the table is slightly uneven, the ball rolls a few centimetres by itself. A hits it within 2 seconds of the whistle and the serve bounces once off the sidewall before passing under the centre screen.",
+    "scenario": "Player A places the ball on the playing deck and lets go. Because the table is slightly uneven, the ball rolls a few centimetres by itself. A hits it within 2 seconds of the whistle and the serve bounces once off the sidewall before passing under the centre board screen.",
     "options": [
       {
         "id": "a",
@@ -2570,6 +2824,7 @@
     ],
     "fixedOrder": false,
     "explanation": "After the ball has been placed and released, it may roll before it is hit, as long as the player does not move it on purpose (for example because the table is not completely even). Only intentional rolling is an irregular serve.",
+    "interpretation": null,
     "ruleRefs": [
       "16.3.5"
     ],
@@ -2590,7 +2845,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "After the whistle, Player A moves the ball to a different position on the playing deck and serves 1.5 seconds after the whistle. The ball bounces once off the sidewall and passes under the centre screen.",
+    "scenario": "After the whistle, Player A moves the ball to a different position on the playing deck and serves 1.5 seconds after the whistle. The ball bounces once off the sidewall and passes under the centre board screen.",
     "options": [
       {
         "id": "a",
@@ -2614,6 +2869,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The server may move the ball to a different position on the playing surface even after the whistle. The serve must still be made within 2 seconds of the whistle.",
+    "interpretation": null,
     "ruleRefs": [
       "16.3.2"
     ],
@@ -2634,7 +2890,7 @@
     "edition": "2026-2028",
     "status": "draft",
     "prompt": "What is the decision?",
-    "scenario": "Player A swings at the ball and misses it without any audible sound. Within the 2 seconds A swings again and serves correctly: one sidewall bounce, then under the centre screen.",
+    "scenario": "Player A swings at the ball and misses it without any audible sound. Within the 2 seconds A swings again and serves correctly: one sidewall bounce, then under the centre board screen.",
     "options": [
       {
         "id": "a",
@@ -2658,6 +2914,7 @@
     ],
     "fixedOrder": false,
     "explanation": "If the server misses the ball and the referee hears no sound, the player may swing again until the 2-second limit is reached. A legal hit within the 2 seconds is a valid serve.",
+    "interpretation": null,
     "ruleRefs": [
       "16.3.6"
     ],
@@ -2703,6 +2960,7 @@
     ],
     "fixedOrder": false,
     "explanation": "The coin-toss winner chooses either to take the serve or to choose the starting side. If the winner chooses the side, the opponent serves first. The first serve alternates between sets.",
+    "interpretation": null,
     "ruleRefs": [
       "12.1",
       "14.1"
@@ -2748,6 +3006,7 @@
     ],
     "fixedOrder": false,
     "explanation": "Time-limited matches are not allowed at IBSA Sanctioned Events, but other organisers may use them. When time expires with a draw, a coin toss decides who serves, and the next point wins.",
+    "interpretation": null,
     "ruleRefs": [
       "9.1",
       "9.2",

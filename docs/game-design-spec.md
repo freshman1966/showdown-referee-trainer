@@ -174,6 +174,7 @@ Field rules:
 - `status`: `draft` | `reviewed` | `approved`. **The production build includes only `approved` questions.** A preview build (branch deploys) includes all.
 - `correct`: array of option ids. `single` requires exactly one.
 - `ruleRefs`: rule numbers as printed in the rulebook.
+- `interpretation`: `null`, or a text shown to the player when the rulebook text does not decide the case on its own (unclear wording, a gap, or two rules that disagree). It states which rule texts apply, where the text is unclear, and how referees decide the case. Shown in the feedback panel below the explanation, under the heading `feedback.interpretationHeading` ("How this answer is derived"), with the label `feedback.interpretationLabel` ("Interpretation") also on the result screen's review list. Translated like `explanation`.
 - `media`: `null` in v1. From v1.1 optional: `{ "type": "svg", "src": "media/<file>.svg", "alt": "<short text alternative>", "description": "<long description, optional>" }`. `alt` is required when `media` is set. Diagrams are drawn for this project; IBSA drawings are not copied.
 - `requiresVision`: `false` in v1. From v1.1, `true` marks a question that cannot be answered without seeing the diagram. A setting "Screen reader mode" excludes these questions from all runs. The validator rejects `requiresVision: true` without `media`.
 - `reviewNote`: stripped from the build output.
